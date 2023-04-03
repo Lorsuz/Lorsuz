@@ -556,7 +556,10 @@ main section.about .container .geral-data .data-self .education .contain ul li p
 
 }
 
-main section.about .container .geral-data .data-self .xp {}
+main section.about .container .geral-data .data-self .xp {
+	width: 600px;
+	margin: 0 auto;
+}
 
 main section.about .container .geral-data .data-self .xp h3 {
 	text-align: center;

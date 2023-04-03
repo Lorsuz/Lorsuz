@@ -81,43 +81,7 @@
 							<h3>Educação</h3>
 							<div class="contain">
 								<div class="line"></div>
-								<ul>
-									<li>
-										<div class="point"></div>
-										<div class="time"><i class="fa-solid fa-calendar"></i><span>2008 - 2012</span></div>
-										<h4>Colegio Inácia Rita</h4>
-										<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel ipsa pariatur, modi iste, esse quis
-											ducimus tempore laborum dolorem ea nostrum inventore officiis placeat at numquam laudantium.</p>
-									</li>
-									<li>
-										<div class="point"></div>
-										<div class="time"><i class="fa-solid fa-calendar"></i><span>2013 - 2015</span></div>
-										<h4>Colegio Cícero Rêgo</h4>
-										<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel ipsa pariatur, modi iste, esse quis
-											ducimus tempore laborum dolorem ea nostrum inventore officiis placeat at numquam laudantium.</p>
-									</li>
-									<li>
-										<div class="point"></div>
-										<div class="time"><i class="fa-solid fa-calendar"></i><span>2016 - 2019</span></div>
-										<h4>Colegio Santa Maria</h4>
-										<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel ipsa pariatur, modi iste, esse quis
-											ducimus tempore laborum dolorem ea nostrum inventore officiis placeat at numquam laudantium.</p>
-									</li>
-									<li>
-										<div class="point"></div>
-										<div class="time"><i class="fa-solid fa-calendar"></i><span>2020 - 2022</span></div>
-										<h4>Instituto Federal do Sertão de Pernambuco</h4>
-										<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel ipsa pariatur, modi iste, esse quis
-											ducimus tempore laborum dolorem ea nostrum inventore officiis placeat at numquam laudantium.</p>
-									</li>
-									<li>
-										<div class="point"></div>
-										<div class="time"><i class="fa-solid fa-calendar"></i><span>2023 - 2025</span></div>
-										<h4>Instituto Federal de ECT da Paraíba</h4>
-										<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel ipsa pariatur, modi iste, esse quis
-											ducimus tempore laborum dolorem ea nostrum inventore officiis placeat at numquam laudantium.</p>
-									</li>
-								</ul>
+								<ul id="education"></ul>
 							</div>
 						</div>
 						<div class="xp">
@@ -125,32 +89,7 @@
 							<div class="slides">
 								<div class="prev"><i class="fa-solid fa-chevron-left"></i></div>
 								<div class="next"><i class="fa-solid fa-chevron-right"></i></div>
-								<ul>
-									<li class="slides-pag active">
-										<h4>lorem</h4>
-										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias velit voluptates aut,
-											consectetur ullam est expedita placeat sapiente quidem nihil, ratione tempora incidunt voluptatem,
-											nemo nulla doloremque possimus exercitationem nesciunt.</p>
-									</li>
-									<li class="slides-pag">
-										<h4>654654645</h4>
-										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias velit voluptates aut,
-											consectetur ullam est expedita placeat sapiente quidem nihil, ratione tempora incidunt voluptatem,
-											nemo nulla doloremque possimus exercitationem nesciunt.</p>
-									</li>
-									<li class="slides-pag">
-										<h4>dfgdfdhfgh</h4>
-										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias velit voluptates aut,
-											consectetur ullam est expedita placeat sapiente quidem nihil, ratione tempora incidunt voluptatem,
-											nemo nulla doloremque possimus exercitationem nesciunt.</p>
-									</li>
-									<li class="slides-pag">
-										<h4>lorfdgfdgdfghukiem</h4>
-										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias velit voluptates aut,
-											consectetur ullam est expedita placeat sapiente quidem nihil, ratione tempora incidunt voluptatem,
-											nemo nulla doloremque possimus exercitationem nesciunt.</p>
-									</li>
-								</ul>
+								<ul id="experience"></ul>
 								<ul class="dots">
 									<li class="dot active"></li>
 									<li class="dot"></li>
@@ -599,7 +538,41 @@
 		</section>
 	</main>
 
+	<script>
+		let divEducation = document.querySelector("#education")
+		fetch("data.json").then((response) => {
+			response.json().then((data) => {
+				data.education.map((card) => {
+					divEducation.innerHTML +=
+						`
+						<li>
+							<div class="point"></div>
+							<div class="time"><i class="fa-solid fa-calendar"></i><span>${card.startYear} - ${card.finalYear}</span></div>
+							<h4>${card.nameSchool}</h4>
+							<p>${card.description}</p>
+						</li>
+						`
+				})
+			})
+		})
+		
+		let divExperience = document.querySelector("#experience")
+		fetch("data.json").then((response) => {
+			response.json().then((data) => {
+				data.experience.map((card) => {
+					divExperience.innerHTML +=
+						`
+						<li class="slides-pag active">
+							<h4>${card.area}</h4>
+							<p>${card.description}</p>
+						</li>
+						`
+				})
+			})
+		})
+	</script>
 	<script src="components/js/script.js"></script>
+
 </body>
 
 </html>

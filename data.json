@@ -1,0 +1,154 @@
+{
+    "education": [
+        {
+            "startYear": 2008,
+            "finalYear": 2012,
+            "nameSchool": "Colegio Inácia Rita",
+            "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel ipsa pariatur, modi iste, esse quis ducimus tempore laborum dolorem ea nostrum inventore officiis placeat at numquam laudantium."
+        },
+        {
+            "startYear": 2013,
+            "finalYear": 2015,
+            "nameSchool": "Colegio Cícero Rêgo",
+            "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel ipsa pariatur, modi iste, esse quis ducimus tempore laborum dolorem ea nostrum inventore officiis placeat at numquam laudantium."
+        },
+        {
+            "startYear": 2016,
+            "finalYear": 2019,
+            "nameSchool": "Colegio Santa Maria",
+            "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel ipsa pariatur, modi iste, esse quis ducimus tempore laborum dolorem ea nostrum inventore officiis placeat at numquam laudantium."
+        },
+        {
+            "startYear": 2020,
+            "finalYear": 2022,
+            "nameSchool": "Instituto Federal do Sertão de Pernambuco",
+            "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel ipsa pariatur, modi iste, esse quis ducimus tempore laborum dolorem ea nostrum inventore officiis placeat at numquam laudantium."
+        },
+        {
+            "startYear": 2023,
+            "finalYear": 2024,
+            "nameSchool": "Instituto Federal de ECT da Paraíba",
+            "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel ipsa pariatur, modi iste, esse quis ducimus tempore laborum dolorem ea nostrum inventore officiis placeat at numquam laudantium."
+        }
+    ],
+    "experience": [
+        {
+            "area": "sdfsfalgmyuj",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias velit voluptates aut, consectetur ullam est expedita placeat sapiente quidem nihil, ratione tempora incidunt voluptatem, nemo nulla doloremque possimus exercitationem nesciunt."
+        },
+        {
+            "area": "aloppooy",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias velit voluptates aut, consectetur ullam est expedita placeat sapiente quidem nihil, ratione tempora incidunt voluptatem, nemo nulla doloremque possimus exercitationem nesciunt."
+        },
+        {
+            "area": "algergergre",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias velit voluptates aut, consectetur ullam est expedita placeat sapiente quidem nihil, ratione tempora incidunt voluptatem, nemo nulla doloremque possimus exercitationem nesciunt."
+        },
+        {
+            "area": "ergrejyujyuuma",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias velit voluptates aut, consectetur ullam est expedita placeat sapiente quidem nihil, ratione tempora incidunt voluptatem, nemo nulla doloremque possimus exercitationem nesciunt."
+        }
+    ],
+    "skills": [
+        {
+            "technology": "",
+            "details": "",
+            "percent": 0
+        },
+        {
+            "technology": "",
+            "details": "",
+            "percent": 0
+        },
+        {
+            "technology": "",
+            "details": "",
+            "percent": 0
+        },
+        {
+            "technology": "",
+            "details": "",
+            "percent": 0
+        },
+        {
+            "technology": "",
+            "details": "",
+            "percent": 0
+        },
+        {
+            "technology": "",
+            "details": "",
+            "percent": 0
+        },
+        {
+            "technology": "",
+            "details": "",
+            "percent": 0
+        },
+        {
+            "technology": "",
+            "details": "",
+            "percent": 0
+        },
+        {
+            "technology": "",
+            "details": "",
+            "percent": 0
+        },
+        {
+            "technology": "",
+            "details": "",
+            "percent": 0
+        },
+        {
+            "technology": "",
+            "details": "",
+            "percent": 0
+        },
+        {
+            "technology": "",
+            "details": "",
+            "percent": 0
+        },
+        {
+            "technology": "",
+            "details": "",
+            "percent": 0
+        },
+        {
+            "technology": "",
+            "details": "",
+            "percent": 0
+        },
+        {
+            "technology": "",
+            "details": "",
+            "percent": 0
+        },
+        {
+            "technology": "",
+            "details": "",
+            "percent": 0
+        },
+        {
+            "technology": "",
+            "details": "",
+            "percent": 0
+        },
+        {
+            "technology": "",
+            "details": "",
+            "percent": 0
+        },
+        {
+            "technology": "",
+            "details": "",
+            "percent": 0
+        },
+        {
+            "technology": "",
+            "details": "",
+            "percent": 0
+        }
+    ]
+}
