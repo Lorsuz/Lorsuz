@@ -499,52 +499,52 @@
 		<section class="contact">
 			<div class="container">
 				<h1>Contato</h1>
-					<h2>Tem alguma duvida</h2>
-					<span>dsd</span>
-					<ul>
-						<li>
-							<div class="icon"><i></i></div>
-							<h4>E-mail</h4>
-							<a>lorsuz13@gmail.com</a>
-						</li>
-						<li>
-							<div class="icon"><i></i></div>
-							<h4>Github</h4>
-							<a href="https://github.com/Lorsuz" target="_blank">github.com/Lorsuz</a>
-						</li>
-						<li>
-							<div class="icon"><i></i></div>
-							<h4>Linkedin</h4>
-							<a href="https://www.linkedin.com/in/ariel-souza-310383238/">linkedin.com/Lorsuz</a>
-						</li>
-						<li>
-							<div class="icon"><i></i></div>
-							<h4>Workana</h4>
-							<a></a>
-						</li>
-					</ul>
-					<h2>Envie um emamil</h2>
-					<span>sda</span>
-					<form action="">
-						<div class="name-email">
-							<input type="text" name="" id="">
-							<input type="text" name="" id="">
-						</div>
+				<h2>Tem alguma duvida</h2>
+				<span>dsd</span>
+				<ul>
+					<li>
+						<div class="icon"><i></i></div>
+						<h4>E-mail</h4>
+						<a>lorsuz13@gmail.com</a>
+					</li>
+					<li>
+						<div class="icon"><i></i></div>
+						<h4>Github</h4>
+						<a href="https://github.com/Lorsuz" target="_blank">github.com/Lorsuz</a>
+					</li>
+					<li>
+						<div class="icon"><i></i></div>
+						<h4>Linkedin</h4>
+						<a href="https://www.linkedin.com/in/ariel-souza-310383238/">linkedin.com/Lorsuz</a>
+					</li>
+					<li>
+						<div class="icon"><i></i></div>
+						<h4>Workana</h4>
+						<a></a>
+					</li>
+				</ul>
+				<h2>Envie um emamil</h2>
+				<span>sda</span>
+				<form action="">
+					<div class="name-email">
 						<input type="text" name="" id="">
-						<textarea name="" id="" cols="30" rows="10"></textarea>
-						<button type="submit">Enviar</button>
-					</form>
+						<input type="text" name="" id="">
+					</div>
+					<input type="text" name="" id="">
+					<textarea name="" id="" cols="30" rows="10"></textarea>
+					<button type="submit">Enviar</button>
+				</form>
 			</div>
 		</section>
 	</main>
 
 	<script>
-		let divEducation = document.querySelector("#education")
-		fetch("data.json").then((response) => {
-			response.json().then((data) => {
-				data.education.map((card) => {
-					divEducation.innerHTML +=
-						`
+			let divEducation = document.querySelector("#education")
+			fetch("data.json").then((response) => {
+				response.json().then((data) => {
+					data.education.map((card) => {
+						divEducation.innerHTML +=
+							`
 						<li>
 							<div class="point"></div>
 							<div class="time"><i class="fa-solid fa-calendar"></i><span>${card.startYear} - ${card.finalYear}</span></div>
@@ -552,24 +552,26 @@
 							<p>${card.description}</p>
 						</li>
 						`
+					})
 				})
 			})
-		})
-		
-		let divExperience = document.querySelector("#experience")
-		fetch("data.json").then((response) => {
-			response.json().then((data) => {
-				data.experience.map((card) => {
-					divExperience.innerHTML +=
-						`
-						<li class="slides-pag active">
-							<h4>${card.area}</h4>
-							<p>${card.description}</p>
+
+			let divExperience = document.querySelector("#experience")
+			fetch("data.json").then((response) => {
+				response.json().then((data) => {
+					data.experience.map((card) => {
+						divExperience.innerHTML +=
+							`
+						<li class="slides-pag">
+						<h4>${card.area}</h4>
+						<p>${card.description}</p>
 						</li>
-						`
+								`
+								
+					})
 				})
 			})
-		})
+
 	</script>
 	<script src="components/js/script.js"></script>
 
