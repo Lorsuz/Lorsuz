@@ -51,104 +51,109 @@
     ],
     "skills": [
         {
-            "technology": "",
-            "details": "",
-            "percent": 0
+            "technology": "HTML",
+            "percent": 95,
+            "details": "HyperText Markup Language"
         },
         {
-            "technology": "",
-            "details": "",
-            "percent": 0
+            "technology": "CSS",
+            "percent": 80,
+            "details": "Cascading Style Sheets"
         },
         {
-            "technology": "",
-            "details": "",
-            "percent": 0
+            "technology": "JS",
+            "percent": 75,
+            "details": "Java Script"
         },
         {
-            "technology": "",
-            "details": "",
-            "percent": 0
+            "technology": "PHP",
+            "percent": 60,
+            "details": "Hypertext Preprocessor"
         },
         {
-            "technology": "",
-            "details": "",
-            "percent": 0
+            "technology": "SQL",
+            "percent": 85,
+            "details": "Structured Query Language"
         },
         {
-            "technology": "",
-            "details": "",
-            "percent": 0
+            "technology": "PYTHON",
+            "percent": 70,
+            "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias velit voluptates aut, consectetur ullam est expedita placeat"
         },
         {
-            "technology": "",
-            "details": "",
-            "percent": 0
+            "technology": "JAVA",
+            "percent": 70,
+            "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias velit voluptates aut, consectetur ullam est expedita placeat"
         },
         {
-            "technology": "",
-            "details": "",
-            "percent": 0
+            "technology": "C & C++",
+            "percent": 60,
+            "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias velit voluptates aut, consectetur ullam est expedita placeat"
         },
         {
-            "technology": "",
-            "details": "",
-            "percent": 0
+            "technology": "SASS & SCSS",
+            "percent": 80,
+            "details": "Syntactically Awesome Style Sheets & Sassy Cascadig Style Sheets"
         },
         {
-            "technology": "",
-            "details": "",
-            "percent": 0
+            "technology": "NODE.JS",
+            "percent": 30,
+            "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias velit voluptates aut, consectetur ullam est expedita placeat"
         },
         {
-            "technology": "",
-            "details": "",
-            "percent": 0
+            "technology": "BOOSTRAP",
+            "percent": 90,
+            "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias velit voluptates aut, consectetur ullam est expedita placeat"
         },
         {
-            "technology": "",
-            "details": "",
-            "percent": 0
+            "technology": "LARAVEL",
+            "percent": 60,
+            "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias velit voluptates aut, consectetur ullam est expedita placeat"
         },
         {
-            "technology": "",
-            "details": "",
-            "percent": 0
+            "technology": "PL",
+            "percent": 100,
+            "details": "Programming Logic"
         },
         {
-            "technology": "",
-            "details": "",
-            "percent": 0
+            "technology": "OOP",
+            "percent": 100,
+            "details": "Object-Oriented Programming"
         },
         {
-            "technology": "",
-            "details": "",
-            "percent": 0
+            "technology": "GIT & GITHUB",
+            "percent": 85,
+            "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias velit voluptates aut, consectetur ullam est expedita placeat"
         },
         {
-            "technology": "",
-            "details": "",
-            "percent": 0
+            "technology": "PDO & MYSQLI",
+            "percent": 80,
+            "details": "PHP Data Object"
         },
         {
-            "technology": "",
-            "details": "",
-            "percent": 0
+            "technology": "GODOT",
+            "percent": 20,
+            "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias velit voluptates aut, consectetur ullam est expedita placeat"
         },
         {
-            "technology": "",
-            "details": "",
-            "percent": 0
+            "technology": "GAME MAKER",
+            "percent": 40,
+            "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias velit voluptates aut, consectetur ullam est expedita placeat"
         },
         {
-            "technology": "",
-            "details": "",
-            "percent": 0
+            "technology": "RPG MAKER",
+            "percent": 95,
+            "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias velit voluptates aut, consectetur ullam est expedita placeat"
         },
         {
-            "technology": "",
-            "details": "",
-            "percent": 0
+            "technology": "FIGMA",
+            "percent": 70,
+            "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias velit voluptates aut, consectetur ullam est expedita placeat"
+        },
+        {
+            "technology": "WORDPRESS",
+            "percent": 80,
+            "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias velit voluptates aut, consectetur ullam est expedita placeat"
         }
     ]
 }

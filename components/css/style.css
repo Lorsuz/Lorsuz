@@ -29,7 +29,7 @@ button * {
 	padding: 0;
 	outline: none;
 	text-decoration: none;
-	user-select: none;
+	/* user-select: none; */
 	box-sizing: border-box;
 	list-style: none;
 	font-family: "poppins", sans-serif;
@@ -752,7 +752,7 @@ main section.about .container .geral-data .skills>span {
 
 }
 
-main section.about .container .geral-data .skills>h4 {
+main section.about .container .geral-data .skills>div#skills>h4 {
 	margin-bottom: 10px;
 	font-size: 20px;
 	color: var(--skin-color);
@@ -760,37 +760,37 @@ main section.about .container .geral-data .skills>h4 {
 
 }
 
-main section.about .container .geral-data .skills>ul {
+main section.about .container .geral-data .skills>div#skills>ul {
 	/* margin-bottom: 50px; */
 	margin-bottom: 15px;
 	border-bottom: 1px solid var(--bg-black-50);
 }
 
-main section.about .container .geral-data .skills>ul li {
+main section.about .container .geral-data .skills>div#skills>ul li {
 	position: relative;
 	margin-bottom: 25px;
 }
 
-main section.about .container .geral-data .skills>ul li .progress .name-porcent {
+main section.about .container .geral-data .skills>div#skills>ul li .progress .name-porcent {
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 5px;
 	position: relative;
 }
 
-main section.about .container .geral-data .skills>ul li .progress .name-porcent span:nth-child(1) {
+main section.about .container .geral-data .skills>div#skills>ul li .progress .name-porcent span:nth-child(1) {
 	font-weight: 900;
 	color: var(--text-black-900);
 	cursor: pointer;
 
 }
 
-main section.about .container .geral-data .skills>ul li .progress .name-porcent span:nth-child(1):hover~.details {
+main section.about .container .geral-data .skills>div#skills>ul li .progress .name-porcent span:nth-child(1):hover~.details {
 	visibility: visible;
 
 }
 
-main section.about .container .geral-data .skills>ul li .progress .name-porcent .details {
+main section.about .container .geral-data .skills>div#skills>ul li .progress .name-porcent .details {
 	position: absolute;
 	visibility: hidden;
 	top: 220%;
@@ -803,7 +803,7 @@ main section.about .container .geral-data .skills>ul li .progress .name-porcent 
 	text-align: justify;
 }
 
-main section.about .container .geral-data .skills>ul li .progress .name-porcent .details::before {
+main section.about .container .geral-data .skills>div#skills>ul li .progress .name-porcent .details::before {
 	position: absolute;
 	content: '';
 	width: 0px;
@@ -816,11 +816,11 @@ main section.about .container .geral-data .skills>ul li .progress .name-porcent 
 
 }
 
-main section.about .container .geral-data .skills>ul li .progress .name-porcent span:nth-child(3) {
+main section.about .container .geral-data .skills>div#skills>ul li .progress .name-porcent span:nth-child(3) {
 	color: var(--text-black-700);
 }
 
-main section.about .container .geral-data .skills>ul li .progress .progress-bar {
+main section.about .container .geral-data .skills>div#skills>ul li .progress .progress-bar {
 	width: 100%;
 	height: 10px;
 	background: var(--bg-black-50);
@@ -828,7 +828,7 @@ main section.about .container .geral-data .skills>ul li .progress .progress-bar 
 	border-radius: 50px;
 }
 
-main section.about .container .geral-data .skills>ul li .progress .progress-bar .progress-value {
+main section.about .container .geral-data .skills>div#skills>ul li .progress .progress-bar .progress-value {
 	background: var(--skin-color);
 	height: 100%;
 }
