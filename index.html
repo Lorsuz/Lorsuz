@@ -224,10 +224,11 @@
 				var amountItems = data.skills.length
 				var itemCurrent = 0
 				var sections = ["Linguagens", "Pré-processadores", "Frameworks", "Acessórios", "Engines"]
+				var newUlStart = [0,8,10,12,16]
 				var nameSection = 0
 				data.skills.map((card) => {
 
-					function newSection(index) {
+					function newSection(index = 0) {
 						if (itemCurrent == index) {
 							divSkills.innerHTML +=
 								`
@@ -237,11 +238,9 @@
 							nameSection++
 						}
 					}
-					newSection(0)
-					newSection(8)
-					newSection(10)
-					newSection(12)
-					newSection(16)
+					for (let index = 0; index < newUlStart.length; index++) {
+						newSection(newUlStart[index])
+					}
 
 					let divUl = document.querySelector(`#skills > ul.${sections[nameSection - 1]}`)
 					divUl.innerHTML +=
