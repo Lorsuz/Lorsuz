@@ -190,3 +190,73 @@ window.addEventListener("load", () => {
 
 	const mode = new Mode("aside .theme button");
 })
+
+let divEducation = document.querySelector("#education")
+let divExperience = document.querySelector("#experience")
+let divSkills = document.querySelector("#skills")
+
+fetch("data.json").then((response) => {
+
+	response.json().then((data) => {
+		data.education.map((card) => {
+			divEducation.innerHTML +=
+				`
+				<li>
+					<div class="point"></div>
+					<div class="time"><i class="fa-solid fa-calendar"></i><span>${card.startYear} - ${card.finalYear}</span></div>
+					<h4>${card.nameSchool}</h4>
+					<p>${card.description}</p>
+				</li>
+				`
+		})
+		data.experience.map((card) => {
+			divExperience.innerHTML +=
+				`
+				<li class="slides-pag">
+				<h4>${card.area}</h4>
+				<p>${card.description}</p>
+				</li>
+				`
+
+		})
+		var amountItems = data.skills.length
+		var itemCurrent = 0
+		var sections = ["Linguagens", "Pré-processadores", "Frameworks", "Acessórios", "Engines"]
+		var newUlStart = [0,8,10,12,16]
+		var nameSection = 0
+		data.skills.map((card) => {
+
+			function newSection(index = 0) {
+				if (itemCurrent == index) {
+					divSkills.innerHTML +=
+						`
+						<h4>${sections[nameSection]}</h4>
+						<ul class="${sections[nameSection]}"></ul>
+						`
+					nameSection++
+				}
+			}
+			for (let index = 0; index < newUlStart.length; index++) {
+				newSection(newUlStart[index])
+			}
+
+			let divUl = document.querySelector(`#skills > ul.${sections[nameSection - 1]}`)
+			divUl.innerHTML +=
+				`
+				<li>
+					<div class="progress">
+						<div class="name-porcent">
+							<span>${card.technology}</span>
+							<div class="details">${card.details}</div>
+							<span>${card.percent}%</span>
+						</div>
+						<div class="progress-bar">
+							<div class="progress-value" style="width: ${card.percent}%;"></div>
+						</div>
+					</div>
+				</li>
+				`
+			itemCurrent++
+		})
+	})
+})
