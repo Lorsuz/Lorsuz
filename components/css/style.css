@@ -1,11 +1,12 @@
 @import "https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap";
 @import "https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap";
+@import "./animations/@keyframes.css";
 :root {
-  --bg-black-900: #f2f2fc;
-  --bg-black-100: #fdf9ff;
-  --bg-black-50: #e8dfec;
-  --text-black-900: #302e4d;
-  --text-black-700: #504e70;
+  --background-max: #f2f2fc;
+  --background-medium: #fdf9ff;
+  --background-min: #e8dfec;
+  --text-main: #302e4d;
+  --text-sub: #504e70;
   --skin-color: #ec1839;
 }
 
@@ -44,47 +45,49 @@ body {
 body * {
   transition: 300ms;
 }
-body .custom-cursor {
+body .dot-in {
   width: 6px;
-  height: 6px;
+  aspect-ratio: 1;
   position: absolute;
   transform: translateX(-50%) translateY(-50%);
-  background-color: var(--text-black-700);
+  background-color: var(--text-sub);
+  pointer-events: none;
+  border-radius: 50%;
+  z-index: 1000;
   transition: transform 50ms ease;
-  pointer-events: none;
-  border-radius: 50%;
-  z-index: 1000;
+  transition: transform 50ms ease;
 }
-body .dotout {
+body .dot-out {
   width: 30px;
-  height: 30px;
+  aspect-ratio: 1;
   position: absolute;
   transform: translateX(-50%) translateY(-50%);
-  border: 2px solid var(--text-black-700);
-  transition: transform 100ms ease;
+  border: 2px solid var(--text-sub);
   pointer-events: none;
   border-radius: 50%;
   z-index: 1000;
+  transition: transform 100ms ease;
 }
-body .custom-pointer {
-  width: 50px;
-  height: 50px;
+body .dot-pointer {
+  width: 30px;
+  aspect-ratio: 1;
   position: absolute;
   transform: translateX(-50%) translateY(-50%);
-  background: var(--text-black-700);
-  transition: transform 100ms ease;
+  background: var(--text-sub);
   pointer-events: none;
   border-radius: 50%;
   z-index: 1000;
+  opacity: 0;
+  transition: transform 100ms ease;
 }
 body aside {
   padding: 30px;
   width: 270px;
-  background: var(--bg-black-100);
+  background: var(--bg-medium);
   position: fixed;
   left: 0;
   top: 0;
-  border-right: 1px solid var(--bg-black-50);
+  border-right: 1px solid var(--background-min);
   height: 100%;
   z-index: 10;
   display: flex;
@@ -99,7 +102,7 @@ body aside .logo {
 }
 body aside .logo a {
   text-transform: capitalize;
-  color: var(--text-black-900);
+  color: var(--text-main);
   font-weight: 700;
   padding: 15px 20px;
   font-size: 30px;
@@ -133,7 +136,7 @@ body aside .logo a span {
 body aside .nav-toggler {
   height: 40px;
   width: 45px;
-  border: 1px solid var(--bg-black-50);
+  border: 1px solid var(--background-min);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -143,7 +146,7 @@ body aside .nav-toggler {
   left: 300px;
   top: 20px;
   border-radius: 5px;
-  background: var(--bg-black-100);
+  background: var(--bg-medium);
   display: none;
 }
 body aside .nav-toggler span {
@@ -169,8 +172,8 @@ body aside nav ul li button {
   font-size: 16px;
   font-weight: 600;
   width: 100%;
-  border-bottom: 1px solid var(--bg-black-50);
-  color: var(--text-black-900);
+  border-bottom: 1px solid var(--background-min);
+  color: var(--text-main);
   padding: 5px 15px;
   background: transparent;
 }
@@ -219,7 +222,7 @@ body aside .theme:where(label) {
   transition: transform 500ms ease-in-out;
 }
 body main section {
-  background: var(--bg-black-900);
+  background: var(--background-max);
   height: 100vh;
   position: absolute;
   left: 270px;
@@ -230,13 +233,13 @@ body main section {
   opacity: 1;
   overflow-x: hidden;
   overflow-y: scroll;
-  border-left: 1px solid var(--bg-black-50);
+  border-left: 1px solid var(--background-min);
 }
 body main section::-webkit-scrollbar {
   width: 5px;
 }
 body main section::-webkit-scrollbar-track {
-  background: var(--bg-black-900);
+  background: var(--background-max);
 }
 body main section::-webkit-scrollbar-thumb {
   background: var(--skin-color);
@@ -246,7 +249,7 @@ body main section > .container {
 }
 body main section > .container > h1 {
   font-size: 40px;
-  color: var(--text-black-900);
+  color: var(--text-main);
   margin-bottom: 50px;
   position: relative;
   display: inline-block;
@@ -276,7 +279,7 @@ body main section.sectionAppear {
 }
 body main section.home {
   height: 100%;
-  color: var(--text-black-900);
+  color: var(--text-main);
   z-index: 1;
 }
 body main section.home .container {
@@ -309,7 +312,7 @@ body main section.home .container .left h2 span {
 body main section.home .container .left p {
   margin-bottom: 50px;
   width: 90%;
-  color: var(--text-black-700);
+  color: var(--text-sub);
 }
 body main section.home .container .left a {
   display: inline-block;
@@ -318,14 +321,14 @@ body main section.home .container .left a {
   border: 3px solid var(--skin-color);
   font-size: 20px;
   font-weight: 500;
-  color: var(--text-black-900);
+  color: var(--text-main);
   white-space: nowrap;
   transition: all 300ms ease;
 }
 body main section.home .container .left a:hover {
   background: var(--skin-color);
   color: white;
-  border: 3px solid var(--bg-black-50);
+  border: 3px solid var(--background-min);
 }
 body main section.home .container .right {
   display: flex;
@@ -364,7 +367,7 @@ body main section.home .container .right .img .overflow {
   justify-content: center;
   align-items: center;
   border-radius: 5px;
-  border: 5px solid var(--bg-black-50);
+  border: 5px solid var(--background-min);
 }
 body main section.home .container .right .img img {
   width: 160%;
@@ -375,12 +378,12 @@ body main section.about > .container {
   padding: 20px 30px 150px 0;
 }
 body main section.about > .container > p {
-  color: var(--text-black-700);
+  color: var(--text-sub);
   margin-bottom: 30px;
   text-align: justify;
 }
 body main section.about .container h2 {
-  color: var(--text-black-900);
+  color: var(--text-main);
   font-size: 25px;
 }
 body main section.about .container .geral-data {
@@ -401,11 +404,11 @@ body main section.about .container .geral-data .data-self ul.data li {
   height: 40px;
   display: flex;
   align-items: center;
-  border-bottom: 1px solid var(--bg-black-50);
-  color: var(--text-black-700);
+  border-bottom: 1px solid var(--background-min);
+  color: var(--text-sub);
 }
 body main section.about .container .geral-data .data-self ul.data li span {
-  color: var(--text-black-900);
+  color: var(--text-main);
   font-weight: 900;
   padding-right: 5px;
 }
@@ -432,17 +435,17 @@ body main section.about .container .geral-data .data-self .btn a:hover {
 body main section.about .container .geral-data .data-self .education h3 {
   margin-bottom: 20px;
   font-size: 30px;
-  color: var(--text-black-900);
+  color: var(--text-main);
   text-align: center;
 }
 body main section.about .container .geral-data .data-self .education .contain {
-  background: var(--bg-black-100);
+  background: var(--bg-medium);
   border-radius: 10px;
   padding: 30px 25px;
   margin-bottom: 70px;
-  background: var(--bg-black-100);
+  background: var(--bg-medium);
   background-size: 100%;
-  box-shadow: 0 0 10px var(--bg-black-50);
+  box-shadow: 0 0 10px var(--background-min);
   position: relative;
 }
 body main section.about .container .geral-data .data-self .education .contain::before {
@@ -461,7 +464,7 @@ body main section.about .container .geral-data .data-self .education .contain ul
   position: relative;
   padding-left: 23px;
   border-left: 5px solid var(--skin-color);
-  color: var(--text-black-700);
+  color: var(--text-sub);
   padding-bottom: 30px;
   text-align: justify;
 }
@@ -479,22 +482,22 @@ body main section.about .container .geral-data .data-self .education .contain ul
 }
 body main section.about .container .geral-data .data-self .education .contain ul li .time {
   margin-bottom: 10px;
-  color: var(--text-black-700);
+  color: var(--text-sub);
 }
 body main section.about .container .geral-data .data-self .education .contain ul li .time i {
   margin-right: 8px;
-  color: var(--text-black-900);
+  color: var(--text-main);
 }
 body main section.about .container .geral-data .data-self .education .contain ul li .time span {
-  color: var(--text-black-700);
+  color: var(--text-sub);
 }
 body main section.about .container .geral-data .data-self .education .contain ul li h4 {
-  color: var(--text-black-900);
+  color: var(--text-main);
   font-size: 20px;
   margin-bottom: 5px;
 }
 body main section.about .container .geral-data .data-self .education .contain ul li p {
-  color: var(--text-black-700);
+  color: var(--text-sub);
 }
 body main section.about .container .geral-data .data-self .xp {
   width: 600px;
@@ -503,7 +506,7 @@ body main section.about .container .geral-data .data-self .xp {
 body main section.about .container .geral-data .data-self .xp h3 {
   text-align: center;
   font-size: 30px;
-  color: var(--text-black-900);
+  color: var(--text-main);
   margin-bottom: 25px;
 }
 body main section.about .container .geral-data .data-self .xp .slides {
@@ -511,9 +514,9 @@ body main section.about .container .geral-data .data-self .xp .slides {
   padding: 20px 50px;
   overflow: hidden;
   border-radius: 10px;
-  background: var(--bg-black-100);
+  background: var(--bg-medium);
   background-size: 100%;
-  box-shadow: 0 0 10px var(--bg-black-50);
+  box-shadow: 0 0 10px var(--background-min);
 }
 body main section.about .container .geral-data .data-self .xp .slides::before {
   content: "";
@@ -540,37 +543,29 @@ body main section.about .container .geral-data .data-self .xp .slides:where(.nex
   user-select: none;
   background: #000;
 }
-body main section.about .container .geral-data .data-self .xp .slides .prev {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  cursor: pointer;
-  padding: 10px 5px;
-  left: 10px;
-}
-body main section.about .container .geral-data .data-self .xp .slides .prev:hover > i {
-  font-size: 40px;
-}
-body main section.about .container .geral-data .data-self .xp .slides .prev i {
-  color: var(--skin-color);
-  font-size: 30px;
-  transition: 200ms;
-}
+body main section.about .container .geral-data .data-self .xp .slides .prev,
 body main section.about .container .geral-data .data-self .xp .slides .next {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   cursor: pointer;
   padding: 10px 5px;
-  right: 10px;
 }
+body main section.about .container .geral-data .data-self .xp .slides .prev:hover > i,
 body main section.about .container .geral-data .data-self .xp .slides .next:hover > i {
   font-size: 40px;
 }
+body main section.about .container .geral-data .data-self .xp .slides .prev i,
 body main section.about .container .geral-data .data-self .xp .slides .next i {
   color: var(--skin-color);
   font-size: 30px;
   transition: 200ms;
+}
+body main section.about .container .geral-data .data-self .xp .slides .prev {
+  left: 10px;
+}
+body main section.about .container .geral-data .data-self .xp .slides .next {
+  right: 10px;
 }
 body main section.about .container .geral-data .data-self .xp .slides ul {
   overflow: hidden;
@@ -592,7 +587,7 @@ body main section.about .container .geral-data .data-self .xp .slides .slides-pa
 }
 body main section.about .container .geral-data .data-self .xp .slides .slides-pag p {
   text-align: justify;
-  color: var(--text-black-700);
+  color: var(--text-sub);
 }
 body main section.about .container .geral-data .data-self .xp .slides .slides-pag.toRightOld {
   animation: toRightOld 500ms ease-in-out;
@@ -634,12 +629,12 @@ body main section.about .container .geral-data .skills {
 body main section.about .container .geral-data .skills h3 {
   text-align: center;
   font-size: 30px;
-  color: var(--text-black-900);
+  color: var(--text-main);
 }
 body main section.about .container .geral-data .skills > span {
   display: block;
   margin-bottom: 20px;
-  color: var(--text-black-700);
+  color: var(--text-sub);
 }
 body main section.about .container .geral-data .skills > div#skills > h4 {
   margin-bottom: 10px;
@@ -649,7 +644,7 @@ body main section.about .container .geral-data .skills > div#skills > h4 {
 }
 body main section.about .container .geral-data .skills > div#skills > ul {
   margin-bottom: 15px;
-  border-bottom: 1px solid var(--bg-black-50);
+  border-bottom: 1px solid var(--background-min);
 }
 body main section.about .container .geral-data .skills > div#skills > ul li {
   position: relative;
@@ -663,23 +658,23 @@ body main section.about .container .geral-data .skills > div#skills > ul li .pro
 }
 body main section.about .container .geral-data .skills > div#skills > ul li .progress .name-porcent span:nth-child(1) {
   font-weight: 900;
-  color: var(--text-black-900);
+  color: var(--text-main);
   cursor: pointer;
 }
 body main section.about .container .geral-data .skills > div#skills > ul li .progress .name-porcent span:nth-child(1):hover ~ .details {
   visibility: visible;
 }
 body main section.about .container .geral-data .skills > div#skills > ul li .progress .name-porcent span:nth-child(3) {
-  color: var(--text-black-700);
+  color: var(--text-sub);
 }
 body main section.about .container .geral-data .skills > div#skills > ul li .progress .name-porcent .details {
   position: absolute;
   visibility: hidden;
   top: 220%;
-  background: var(--bg-black-100);
+  background: var(--bg-medium);
   z-index: 10;
-  color: var(--text-black-700);
-  border: 2px solid var(--text-black-900);
+  color: var(--text-sub);
+  border: 2px solid var(--text-main);
   padding: 10px;
   border-radius: 10px;
   text-align: justify;
@@ -691,14 +686,14 @@ body main section.about .container .geral-data .skills > div#skills > ul li .pro
   height: 0px;
   border-width: 10px;
   border-style: solid;
-  border-color: transparent transparent var(--text-black-900) transparent;
+  border-color: transparent transparent var(--text-main) transparent;
   top: 0;
   transform: translateY(-100%);
 }
 body main section.about .container .geral-data .skills > div#skills > ul li .progress .progress-bar {
   width: 100%;
   height: 10px;
-  background: var(--bg-black-50);
+  background: var(--background-min);
   overflow: hidden;
   border-radius: 50px;
 }
@@ -714,10 +709,10 @@ body main section.services .servicesCards .card {
   min-width: 300px;
   width: 30%;
   max-width: 450px;
-  background: var(--bg-black-100);
+  background: var(--bg-medium);
   padding: 20px;
   margin: 10px;
-  border: 2px solid var(--bg-black-50);
+  border: 2px solid var(--background-min);
   border-radius: 5px;
 }
 body main section.services .servicesCards .card .i {
@@ -741,14 +736,14 @@ body main section.services .servicesCards .card h2 {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--text-black-900);
+  color: var(--text-main);
   font-size: 1.5rem;
   text-align: center;
   margin-bottom: 20px;
   height: 70px;
 }
 body main section.services .servicesCards .card p {
-  color: var(--text-black-700);
+  color: var(--text-sub);
   text-align: justify;
   display: -webkit-box;
   -webkit-line-clamp: 4;
@@ -760,64 +755,23 @@ body main section.services .servicesCards .card:hover {
   cursor: pointer;
 }
 body main section.services .servicesCards .card:hover i {
-  color: var(--bg-black-100);
+  color: var(--bg-medium);
   background: var(--skin-color);
   padding: 20px;
   border-radius: 50%;
 }
 body.dark {
-  --bg-black-900: #151515;
-  --bg-black-100: #222222;
-  --bg-black-50: #393939;
-  --text-black-900: #ffffff;
-  --text-black-700: #e9e9e9;
+  --background-max: #151515;
+  --bg-medium: #222222;
+  --background-min: #393939;
+  --text-main: #ffffff;
+  --text-sub: #e9e9e9;
 }
 body.dark main section.about .container .geral-data .data-self .education .contain::before {
   opacity: 0.1;
 }
 body.dark main section.about .container .geral-data .data-self .xp .slides::before {
   opacity: 0.2;
-}
-
-@keyframes sectionAppear {
-  from {
-    transform: translateX(100%);
-  }
-  to {
-    transform: translateX(0);
-  }
-}
-@keyframes toRightOld {
-  from {
-    transform: translateX(0%);
-  }
-  to {
-    transform: translateX(-100%);
-  }
-}
-@keyframes toRightNew {
-  from {
-    transform: translateX(100%);
-  }
-  to {
-    transform: translateX(0%);
-  }
-}
-@keyframes toLeftOld {
-  from {
-    transform: translateX(0%);
-  }
-  to {
-    transform: translateX(100%);
-  }
-}
-@keyframes toLeftNew {
-  from {
-    transform: translateX(-100%);
-  }
-  to {
-    transform: translateX(0%);
-  }
 }
 
 /*# sourceMappingURL=style.css.map */

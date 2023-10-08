@@ -1,22 +1,23 @@
-const square = document.querySelector( '.custom-cursor' );
+// Check if the elements exist in the document
+const dotIn = document.querySelector( '.dot-in' );
 const dotOut = document.querySelector( '.dot-out' );
-const pointer = document.querySelector( '.custom-pointer' );
+const dotPointer = document.querySelector( '.dot-pointer' );
 const buttonsAndLinks = document.querySelectorAll( 'button, a' );
 
 function checkCursorType ( event ) {
 	if ( event.type === 'mouseover' && getComputedStyle( event.target ).cursor === 'pointer' ) {
-
-		square.style.display = 'none';
-		dotout.style.display = 'none';
-		pointer.style.display = 'block';
-	}
-	else{
-		square.style.display = 'block';
-		dotOut.style.display = 'block';
-		pointer.style.display = 'none';
+		dotIn.style.opacity = '0';
+		dotOut.style.opacity = '0';
+		dotPointer.style.opacity = '0.5';
+	} else {
+		dotIn.style.opacity = '1';
+		dotOut.style.opacity = '1';
+		dotPointer.style.opacity = '0';
 	}
 }
 
 buttonsAndLinks.forEach( element => {
-	element.addEventListener( 'mouseenter', checkCursorType );
+	element.addEventListener( 'mouseover', checkCursorType );
+	element.addEventListener( 'mouseout', checkCursorType );
 } );
+

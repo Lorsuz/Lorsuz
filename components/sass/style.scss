@@ -1,21 +1,20 @@
-$color_1: var(--text-black-900);
-$color_2: var(--skin-color);
-$color_3: var(--text-black-700);
+$color_3: var(--text-sub);
 $color_4: white;
 $font-family_1: "poppins", sans-serif;
 $font-family_2: "Clicker Script", cursive;
-$border-color_1: transparent transparent var(--text-black-900) transparent;
+$border-color_1: transparent transparent var(--text-main) transparent;
 
 @import "https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap";
 @import "https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap";
 
+@import "./animations/@keyframes.css";
 
 :root {
-	--bg-black-900: #f2f2fc;
-	--bg-black-100: #fdf9ff;
-	--bg-black-50: #e8dfec;
-	--text-black-900: #302e4d;
-	--text-black-700: #504e70;
+	--background-max: #f2f2fc;
+	--background-medium: #fdf9ff;
+	--background-min: #e8dfec;
+	--text-main: #302e4d;
+	--text-sub: #504e70;
 	--skin-color: #ec1839;
 }
 
@@ -31,7 +30,7 @@ button {
 	}
 
 	i {
-		color: $color_2;
+		color: var(--skin-color);
 		font-size: 25px;
 		transition: transform 500ms ease-in-out;
 	}
@@ -54,51 +53,57 @@ body {
 	overflow-x: hidden;
 
 	* {
-		transition: 300ms; 
-	}
-	.custom-cursor{
-		width: 6px;
-		height: 6px;
-		position: absolute;
-		transform: translateX(-50%) translateY(-50%);
-    background-color: var(--text-black-700);
-    transition: transform 50ms ease;
-    pointer-events: none;
-		border-radius: 50%;
-		z-index: 1000;
+		transition: 300ms;
 	}
 
-	.dotout{
-		width: 30px;
-		height: 30px;
+	.dot-in {
+		width: 6px;
+		aspect-ratio: 1;
 		position: absolute;
 		transform: translateX(-50%) translateY(-50%);
-    border: 2px solid var(--text-black-700);
-    transition: transform 100ms ease;
-    pointer-events: none;
+		background-color: var(--text-sub);
+		pointer-events: none; 
 		border-radius: 50%;
 		z-index: 1000;
+		transition: transform 50ms ease;
+		transition: transform 50ms ease;
+
 	}
-	.custom-pointer{
-		width: 50px;
-		height: 50px;
+
+	.dot-out {
+		width: 30px;
+		aspect-ratio: 1;
 		position: absolute;
 		transform: translateX(-50%) translateY(-50%);
-    background: var(--text-black-700);
-    transition: transform 100ms ease;
-    pointer-events: none;
+		border: 2px solid var(--text-sub);
+		pointer-events: none;
 		border-radius: 50%;
 		z-index: 1000;
+		transition: transform 100ms ease;
+
+	}
+
+	.dot-pointer {
+		width: 30px;
+		aspect-ratio: 1;
+		position: absolute;
+		transform: translateX(-50%) translateY(-50%);
+		background: var(--text-sub);
+		pointer-events: none;
+		border-radius: 50%;
+		z-index: 1000;
+		opacity: 0;
+		transition: transform 100ms ease;
 	}
 
 	aside {
 		padding: 30px;
 		width: 270px;
-		background: var(--bg-black-100);
+		background: var(--bg-medium);
 		position: fixed;
 		left: 0;
 		top: 0;
-		border-right: 1px solid var(--bg-black-50);
+		border-right: 1px solid var(--background-min);
 		height: 100%;
 		z-index: 10;
 		display: flex;
@@ -113,7 +118,7 @@ body {
 
 			a {
 				text-transform: capitalize;
-				color: $color_1;
+				color: var(--text-main);
 				font-weight: 700;
 				padding: 15px 20px;
 				font-size: 30px;
@@ -152,7 +157,7 @@ body {
 		.nav-toggler {
 			height: 40px;
 			width: 45px;
-			border: 1px solid var(--bg-black-50);
+			border: 1px solid var(--background-min);
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
@@ -162,7 +167,7 @@ body {
 			left: 300px;
 			top: 20px;
 			border-radius: 5px;
-			background: var(--bg-black-100);
+			background: var(--bg-medium);
 			display: none;
 
 			span {
@@ -191,8 +196,8 @@ body {
 						font-size: 16px;
 						font-weight: 600;
 						width: 100%;
-						border-bottom: 1px solid var(--bg-black-50);
-						color: $color_1;
+						border-bottom: 1px solid var(--background-min);
+						color: var(--text-main);
 						padding: 5px 15px;
 						background: transparent;
 
@@ -208,7 +213,7 @@ body {
 					}
 
 					button.active {
-						color: $color_2;
+						color: var(--skin-color);
 						cursor: default;
 
 						* {
@@ -254,7 +259,7 @@ body {
 			}
 
 			&:where(label) {
-				color: $color_2;
+				color: var(--skin-color);
 				font-size: 25px;
 				transition: transform 500ms ease-in-out;
 			}
@@ -263,7 +268,7 @@ body {
 
 	main {
 		section {
-			background: var(--bg-black-900);
+			background: var(--background-max);
 			height: 100vh;
 			position: absolute;
 			left: 270px;
@@ -274,14 +279,14 @@ body {
 			opacity: 1;
 			overflow-x: hidden;
 			overflow-y: scroll;
-			border-left: 1px solid var(--bg-black-50);
+			border-left: 1px solid var(--background-min);
 
 			&::-webkit-scrollbar {
 				width: 5px;
 			}
 
 			&::-webkit-scrollbar-track {
-				background: var(--bg-black-900);
+				background: var(--background-max);
 			}
 
 			&::-webkit-scrollbar-thumb {
@@ -293,7 +298,7 @@ body {
 
 				>h1 {
 					font-size: 40px;
-					color: $color_1;
+					color: var(--text-main);
 					margin-bottom: 50px;
 					position: relative;
 					display: inline-block;
@@ -329,7 +334,7 @@ body {
 
 			&.home {
 				height: 100%;
-				color: $color_1;
+				color: var(--text-main);
 				z-index: 1;
 
 				.container {
@@ -350,7 +355,7 @@ body {
 							span {
 								font-family: $font-family_2;
 								font-size: 40px;
-								color: $color_2;
+								color: var(--skin-color);
 								font-weight: 900;
 							}
 						}
@@ -360,7 +365,7 @@ body {
 							font-size: 30px;
 
 							span {
-								color: $color_2;
+								color: var(--skin-color);
 							}
 						}
 
@@ -377,14 +382,14 @@ body {
 							border: 3px solid var(--skin-color);
 							font-size: 20px;
 							font-weight: 500;
-							color: $color_1;
+							color: var(--text-main);
 							white-space: nowrap;
 							transition: all 300ms ease;
 
 							&:hover {
 								background: var(--skin-color);
 								color: $color_4;
-								border: 3px solid var(--bg-black-50);
+								border: 3px solid var(--background-min);
 							}
 						}
 					}
@@ -428,7 +433,7 @@ body {
 								justify-content: center;
 								align-items: center;
 								border-radius: 5px;
-								border: 5px solid var(--bg-black-50);
+								border: 5px solid var(--background-min);
 
 							}
 
@@ -456,7 +461,7 @@ body {
 
 				.container {
 					h2 {
-						color: $color_1;
+						color: var(--text-main);
 						font-size: 25px;
 					}
 
@@ -478,11 +483,11 @@ body {
 									height: 40px;
 									display: flex;
 									align-items: center;
-									border-bottom: 1px solid var(--bg-black-50);
+									border-bottom: 1px solid var(--background-min);
 									color: $color_3;
 
 									span {
-										color: $color_1;
+										color: var(--text-main);
 										font-weight: 900;
 										padding-right: 5px;
 									}
@@ -516,18 +521,18 @@ body {
 								h3 {
 									margin-bottom: 20px;
 									font-size: 30px;
-									color: $color_1;
+									color: var(--text-main);
 									text-align: center;
 								}
 
 								.contain {
-									background: var(--bg-black-100);
+									background: var(--bg-medium);
 									border-radius: 10px;
 									padding: 30px 25px;
 									margin-bottom: 70px;
-									background: var(--bg-black-100);
+									background: var(--bg-medium);
 									background-size: 100%;
-									box-shadow: 0 0 10px var(--bg-black-50);
+									box-shadow: 0 0 10px var(--background-min);
 									position: relative;
 
 									&::before {
@@ -572,7 +577,7 @@ body {
 
 												i {
 													margin-right: 8px;
-													color: $color_1;
+													color: var(--text-main);
 												}
 
 												span {
@@ -581,7 +586,7 @@ body {
 											}
 
 											h4 {
-												color: $color_1;
+												color: var(--text-main);
 												font-size: 20px;
 												margin-bottom: 5px;
 											}
@@ -601,7 +606,7 @@ body {
 								h3 {
 									text-align: center;
 									font-size: 30px;
-									color: $color_1;
+									color: var(--text-main);
 									margin-bottom: 25px;
 								}
 
@@ -610,9 +615,9 @@ body {
 									padding: 20px 50px;
 									overflow: hidden;
 									border-radius: 10px;
-									background: var(--bg-black-100);
+									background: var(--bg-medium);
 									background-size: 100%;
-									box-shadow: 0 0 10px var(--bg-black-50);
+									box-shadow: 0 0 10px var(--background-min);
 
 									&::before {
 										content: "";
@@ -634,55 +639,40 @@ body {
 										cursor: pointer;
 										padding: 10px 5px;
 										font-size: 40px;
-										color: $color_2;
+										color: var(--skin-color);
 										font-size: 30px;
 										transition: 200ms;
 										user-select: none;
-										background: #000; 
+										background: #000;
 									}
 
-									.prev {
-										position: absolute;
-										top: 50%;
-										transform: translateY(-50%);
-										cursor: pointer;
-										padding: 10px 5px;
-										left: 10px;
-
-									
-										&:hover {
-											>i {
-												font-size: 40px;
-											}
-										}
-									
-										i {
-											color: $color_2;
-											font-size: 30px;
-											transition: 200ms;
-										}
-									}
-									
+									.prev,
 									.next {
 										position: absolute;
 										top: 50%;
 										transform: translateY(-50%);
 										cursor: pointer;
 										padding: 10px 5px;
-										right: 10px;
 
-									
 										&:hover {
 											>i {
 												font-size: 40px;
 											}
 										}
-									
+
 										i {
-											color: $color_2;
+											color: var(--skin-color);
 											font-size: 30px;
 											transition: 200ms;
 										}
+									}
+
+									.prev {
+										left: 10px;
+									}
+
+									.next {
+										right: 10px;
 									}
 
 									ul {
@@ -698,7 +688,7 @@ body {
 										width: 500px;
 
 										h4 {
-											color: $color_2;
+											color: var(--skin-color);
 											text-align: center;
 											text-transform: uppercase;
 											font-size: 20px;
@@ -762,7 +752,7 @@ body {
 							h3 {
 								text-align: center;
 								font-size: 30px;
-								color: $color_1;
+								color: var(--text-main);
 							}
 
 							>span {
@@ -775,13 +765,13 @@ body {
 								>h4 {
 									margin-bottom: 10px;
 									font-size: 20px;
-									color: $color_2;
+									color: var(--skin-color);
 									text-decoration: underline;
 								}
 
 								>ul {
 									margin-bottom: 15px;
-									border-bottom: 1px solid var(--bg-black-50);
+									border-bottom: 1px solid var(--background-min);
 
 									li {
 										position: relative;
@@ -797,7 +787,7 @@ body {
 												span {
 													&:nth-child(1) {
 														font-weight: 900;
-														color: $color_1;
+														color: var(--text-main);
 														cursor: pointer;
 
 														&:hover {
@@ -818,10 +808,10 @@ body {
 													position: absolute;
 													visibility: hidden;
 													top: 220%;
-													background: var(--bg-black-100);
+													background: var(--bg-medium);
 													z-index: 10;
 													color: $color_3;
-													border: 2px solid var(--text-black-900);
+													border: 2px solid var(--text-main);
 													padding: 10px;
 													border-radius: 10px;
 													text-align: justify;
@@ -843,7 +833,7 @@ body {
 											.progress-bar {
 												width: 100%;
 												height: 10px;
-												background: var(--bg-black-50);
+												background: var(--background-min);
 												overflow: hidden;
 												border-radius: 50px;
 
@@ -875,10 +865,10 @@ body {
 						min-width: 300px;
 						width: 30%;
 						max-width: 450px;
-						background: var(--bg-black-100);
+						background: var(--bg-medium);
 						padding: 20px;
 						margin: 10px;
-						border: 2px solid var(--bg-black-50);
+						border: 2px solid var(--background-min);
 						border-radius: 5px;
 
 						.i {
@@ -904,7 +894,7 @@ body {
 							display: flex;
 							align-items: center;
 							justify-content: center;
-							color: var(--text-black-900);
+							color: var(--text-main);
 							font-size: 1.5rem;
 							text-align: center;
 							margin-bottom: 20px;
@@ -912,7 +902,7 @@ body {
 						}
 
 						p {
-							color: var(--text-black-700);
+							color: var(--text-sub);
 							text-align: justify;
 							display: -webkit-box;
 							-webkit-line-clamp: 4;
@@ -925,7 +915,7 @@ body {
 							cursor: pointer;
 
 							i {
-								color: var(--bg-black-100);
+								color: var(--bg-medium);
 								background: var(--skin-color);
 								padding: 20px;
 								border-radius: 50%;
@@ -939,11 +929,11 @@ body {
 	}
 
 	&.dark {
-		--bg-black-900: #151515;
-		--bg-black-100: #222222;
-		--bg-black-50: #393939;
-		--text-black-900: #ffffff;
-		--text-black-700: #e9e9e9;
+		--background-max: #151515;
+		--bg-medium: #222222;
+		--background-min: #393939;
+		--text-main: #ffffff;
+		--text-sub: #e9e9e9;
 
 		main {
 			section.about {
@@ -970,55 +960,5 @@ body {
 				}
 			}
 		}
-	}
-}
-
-@keyframes sectionAppear {
-	from {
-		transform: translateX(100%);
-	}
-
-	to {
-		transform: translateX(0);
-	}
-}
-
-@keyframes toRightOld {
-	from {
-		transform: translateX(0%);
-	}
-
-	to {
-		transform: translateX(-100%);
-	}
-}
-
-@keyframes toRightNew {
-	from {
-		transform: translateX(100%);
-	}
-
-	to {
-		transform: translateX(0%);
-	}
-}
-
-@keyframes toLeftOld {
-	from {
-		transform: translateX(0%);
-	}
-
-	to {
-		transform: translateX(100%);
-	}
-}
-
-@keyframes toLeftNew {
-	from {
-		transform: translateX(-100%);
-	}
-
-	to {
-		transform: translateX(0%);
 	}
 }

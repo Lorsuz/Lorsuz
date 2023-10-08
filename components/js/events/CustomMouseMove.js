@@ -1,14 +1,47 @@
-const square = document.querySelector( '.custom-cursor' );
-const dotout = document.querySelector( '.dotout' );
-const pointer = document.querySelector( '.custom-pointer' );
+const dotIn = document.querySelector( '.dot-in' );
+const dotOut = document.querySelector( '.dot-out' );
+const dotPointer = document.querySelector('.dot-pointer');
+
+
 
 document.addEventListener( 'mousemove', ( e ) => {
-	const x = e.clientX;
-	const y = e.clientY;
+	var x = e.clientX;
+	var y = e.clientY;
 
-	pointer.style.background = `var(--color-theme${ 'cc' })`;
+	var radiusDotIn = dotIn.offsetWidth / 2;
+	var radiusDotOut = dotOut.offsetWidth / 2;
+	var radiusDotPointer = dotPointer.offsetWidth / 2;
 
-	square.style.transform = `translate(${ x - 3 }px, ${ y - 3 }px)`;
-	dotout.style.transform = `translate(${ x - 15 }px, ${ y - 15 }px)`;
-	pointer.style.transform = `translate(${ x - 25 }px, ${ y - 25 }px)`;
+	var Dot = {
+		In: {
+			x: x - radiusDotIn,
+			y: y - radiusDotIn
+		},
+		Out: {
+			x: x - radiusDotOut,
+			y: y - radiusDotOut
+		},
+		Pointer: {
+			x: x - radiusDotPointer,
+			y: y - radiusDotPointer
+		}
+	};
+
+	function calcElementPositionInScreenMargin ( cursorPosition, elementPosition, sizeScreen, elementRadius ) {
+		var result;
+		if ( cursorPosition >= sizeScreen - elementRadius ) result = sizeScreen - ( elementRadius * 2 );
+		else if ( cursorPosition <= elementRadius ) result = 0;
+		else result = elementPosition;
+		return result;
+	}
+
+	dotIn.style.transform = `translate(
+		${ calcElementPositionInScreenMargin( x, Dot.In.x, window.innerWidth, radiusDotIn ) }px,
+		${ calcElementPositionInScreenMargin( y, Dot.In.y, window.innerHeight, radiusDotIn ) }px)`;
+	dotOut.style.transform = `translate(
+			${ calcElementPositionInScreenMargin( x, Dot.Out.x, window.innerWidth, radiusDotOut ) }px,
+			${ calcElementPositionInScreenMargin( y, Dot.Out.y, window.innerHeight, radiusDotOut ) }px)`;
+	dotPointer.style.transform = `translate(
+			${ calcElementPositionInScreenMargin( x, Dot.Pointer.x, window.innerWidth, radiusDotPointer ) }px,
+			${ calcElementPositionInScreenMargin( y, Dot.Pointer.y, window.innerHeight, radiusDotPointer ) }px)`;
 } );
