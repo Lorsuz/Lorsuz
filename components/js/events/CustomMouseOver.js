@@ -1,7 +1,7 @@
-// Check if the elements exist in the document
 const dotIn = document.querySelector( '.dot-in' );
 const dotOut = document.querySelector( '.dot-out' );
 const dotPointer = document.querySelector( '.dot-pointer' );
+
 const buttonsAndLinks = document.querySelectorAll( 'button, a' );
 
 function checkCursorType ( event ) {
