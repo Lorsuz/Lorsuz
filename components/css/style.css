@@ -54,8 +54,7 @@ body .dot-in {
   pointer-events: none;
   border-radius: 50%;
   z-index: 1000;
-  transition: transform 50ms ease;
-  transition: transform 50ms ease;
+  transition: opacity 300ms, transform 50ms ease;
 }
 body .dot-out {
   width: 30px;
@@ -66,7 +65,7 @@ body .dot-out {
   pointer-events: none;
   border-radius: 50%;
   z-index: 1000;
-  transition: transform 100ms ease;
+  transition: opacity 300ms, transform 100ms ease;
 }
 body .dot-pointer {
   width: 30px;
@@ -78,7 +77,7 @@ body .dot-pointer {
   border-radius: 50%;
   z-index: 1000;
   opacity: 0;
-  transition: transform 100ms ease;
+  transition: opacity 300ms, transform 100ms ease;
 }
 body aside {
   padding: 30px;
