@@ -8,5 +8,5 @@ import "./events/CustomMouseMove.js";
 import "./classes/Color.js"
 import "./classes/Mode.js"
 import "./classes/Section.js"
-import "./classes/Slide.js"
+
 

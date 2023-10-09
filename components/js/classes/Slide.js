@@ -1,4 +1,4 @@
-class Slide {
+export default class Slide {
 	slide;
 	prev;
 	next;
@@ -87,10 +87,3 @@ class Slide {
 	}
 
 }
-
-const sys = new Slide(
-	"main section.about .container .geral-data .data-self .xp .slides .slides-pag",
-	"main section.about .container .geral-data .data-self .xp .slides .prev",
-	"main section.about .container .geral-data .data-self .xp .slides .next",
-	"main section.about .container .geral-data .data-self .xp .slides .dots .dot"
-);
