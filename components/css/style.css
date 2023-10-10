@@ -784,8 +784,9 @@ body main section.contact ul {
   margin-bottom: 50px;
 }
 body main section.contact ul li {
-  min-width: 250px;
+  min-width: 220px;
   width: 22%;
+  max-width: 300px;
   margin: 10px;
   display: flex;
   justify-content: center;
@@ -811,11 +812,14 @@ body main section.contact ul li a {
   display: block;
   text-align: center;
   padding: 10px 0;
-  width: 90%;
+  width: 95%;
   border-radius: 5px;
 }
 body main section.contact ul li:hover {
   background: #fff;
+}
+body main section.contact ul li:hover h4 {
+  color: #302e4d;
 }
 body main section.contact ul li:hover a {
   background: var(--skin-color);

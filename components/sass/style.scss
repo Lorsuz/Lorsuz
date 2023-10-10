@@ -950,8 +950,9 @@ body {
 					margin-bottom: 50px;
 
 					li {
-						min-width: 250px;
+						min-width: 220px;
 						width: 22%;
+						max-width: 300px;
 						margin: 10px;
 						display: flex;
 						justify-content: center;
@@ -980,13 +981,16 @@ body {
 							display: block;
 							text-align: center;
 							padding: 10px 0;
-							width: 90%;
+							width: 95%;
 							border-radius: 5px;
 						}
 
 						&:hover {
 							background: #fff;
 							// outline: 2px solid var(--skin-color);
+							h4{
+								color: #302e4d; 
+							}
 							a{
 								background: var(--skin-color);
 								color: white;
