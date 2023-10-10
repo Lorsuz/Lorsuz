@@ -34,6 +34,7 @@ button {
 	margin: 0;
 	padding: 0;
 	outline: none;
+	border: none;
 	text-decoration: none;
 	user-select: none;
 	box-sizing: border-box;
@@ -368,7 +369,7 @@ body {
 
 						a {
 							display: inline-block;
-							padding: 12px 35px;
+							padding: 12px 60px;
 							border-radius: 50px;
 							border: 3px solid var(--skin-color);
 							font-size: 20px;
@@ -1007,24 +1008,36 @@ body {
 					.name-email {
 						display: flex;
 						justify-content: space-between;
-
-						input {
-							width: 49%;
-						}
+.camp{
+width: 48%;
+}
 					}
 
-					input,
+					.camp{
+						display: flex;
+						flex-direction: column;
+						label{
+							color: var(--text-sub);
+							font-size: 1.2rem;
+							margin-bottom: 10px;
+							margin-left: 20px;
+							font-weight: bold;
+						}
+						input,
 					textarea {
 						width: 100%;
 						height: 50px;
 						padding: 0 20px;
 						font-size: 1.2rem;
 						border-radius: 100px;
-						border: 2px solid var(--skin-color);
 						margin-bottom: 30px;
-					}
+						border: 2px solid transparent;
+						&:focus{
+							border: 2px solid var(--skin-color);
 
-					>textarea {
+						}
+					}
+					textarea {
 						min-height: 65px;
 						height: 200px;
 						max-height: 300px;
@@ -1033,6 +1046,10 @@ body {
 						resize: vertical;
 						margin-bottom: 20px;
 					}
+				
+				}
+
+					
 
 					.button {
 						display: flex;
