@@ -889,7 +889,7 @@ body main section.contact form .button button {
 body main section.contact form .button button:hover {
   border: 2px solid var(--background-min);
   background: var(--skin-color);
-  color: var(--background-min);
+  color: white;
 }
 body.dark {
   --background-max: #151515;
