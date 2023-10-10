@@ -87,7 +87,7 @@
         },
         {
             "technology": "C & C++",
-            "percent": 60,
+            "percent": 40,
             "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias velit voluptates aut, consectetur ullam est expedita placeat"
         },
         {
@@ -97,7 +97,7 @@
         },
         {
             "technology": "NODE.JS",
-            "percent": 30,
+            "percent": 80,
             "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias velit voluptates aut, consectetur ullam est expedita placeat"
         },
         {

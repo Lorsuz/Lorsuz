@@ -817,6 +817,7 @@ body main section.contact ul li a {
 }
 body main section.contact ul li:hover {
   background: #fff;
+  outline: 2px solid var(--background-min);
 }
 body main section.contact ul li:hover h4 {
   color: #302e4d;
