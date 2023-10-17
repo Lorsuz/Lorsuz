@@ -288,14 +288,47 @@
 			"pages": "https://lorsuz.github.io/wooshol/"
 		},
 		{
-			"project": "Wooshol",
-			"image": "wooshol.png",
+			"project": "Walltitles",
+			"image": "walltitles.png",
 			"skills": [
 				"HTML",
 				"CSS"
 			],
 			"description": "Lorem ipsum dolor sit amet consectetur icing elit. Molestias velit voluptates aut, consectetur ullam est expedita placeat sapiente quidem nihild.",
-			"repository": "wooshol",
+			"repository": "walltitles",
+			"pages": ""
+		},
+		{
+			"project": "Mundo Sano",
+			"image": "sano.png",
+			"skills": [
+				"HTML",
+				"CSS"
+			],
+			"description": "Lorem ipsum dolor sit amet consectetur icing elit. Molestias velit voluptates aut, consectetur ullam est expedita placeat sapiente quidem nihild.",
+			"repository": "sano",
+			"pages": ""
+		},
+		{
+			"project": "Idonesia 77 years",
+			"image": "idonesia77.png",
+			"skills": [
+				"HTML",
+				"CSS"
+			],
+			"description": "Lorem ipsum dolor sit amet consectetur icing elit. Molestias velit voluptates aut, consectetur ullam est expedita placeat sapiente quidem nihild.",
+			"repository": "idonesia77",
+			"pages": ""
+		},
+		{
+			"project": "Noticias da Cidade",
+			"image": "noticia-cidade.png",
+			"skills": [
+				"HTML",
+				"CSS"
+			],
+			"description": "Lorem ipsum dolor sit amet consectetur icing elit. Molestias velit voluptates aut, consectetur ullam est expedita placeat sapiente quidem nihild.",
+			"repository": "noticia-cidade",
 			"pages": ""
 		}
 	]
