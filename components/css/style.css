@@ -2,12 +2,12 @@
 @import "https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap";
 @import "./animations/@keyframes.css";
 :root {
-  --background-max: #f2f2fc;
-  --background-medium: #fdf9ff;
+  --background-max: #fdf9ff;
+  --background-middle: #f2f2fc;
   --background-min: #e8dfec;
   --text-main: #302e4d;
   --text-sub: #504e70;
-  --skin-color: #ec1839;
+  --skin-color: #2e8832;
 }
 
 * {
@@ -83,7 +83,7 @@ body .dot-pointer {
 body aside {
   padding: 30px;
   width: 270px;
-  background: var(--background-medium);
+  background: var(--background-max);
   position: fixed;
   left: 0;
   top: 0;
@@ -146,7 +146,7 @@ body aside .nav-toggler {
   left: 300px;
   top: 20px;
   border-radius: 5px;
-  background: var(--background-medium);
+  background: var(--background-max);
   display: none;
 }
 body aside .nav-toggler span {
@@ -222,7 +222,7 @@ body aside .theme:where(label) {
   transition: transform 500ms ease-in-out;
 }
 body main section {
-  background: var(--background-max);
+  background: var(--background-middle);
   height: 100vh;
   position: absolute;
   left: 270px;
@@ -239,7 +239,7 @@ body main section::-webkit-scrollbar {
   width: 5px;
 }
 body main section::-webkit-scrollbar-track {
-  background: var(--background-max);
+  background: var(--background-middle);
 }
 body main section::-webkit-scrollbar-thumb {
   background: var(--skin-color);
@@ -327,7 +327,7 @@ body main section.home .container .left a {
 }
 body main section.home .container .left a:hover {
   background: var(--skin-color);
-  color: var(--background-max);
+  color: var(--background-middle);
   border: 3px solid var(--background-min);
 }
 body main section.home .container .right {
@@ -425,7 +425,7 @@ body main section.about .container .geral-data .data-self .btn a {
   background: var(--skin-color);
   font-size: 18px;
   font-weight: 500;
-  color: var(--background-max);
+  color: var(--background-middle);
   white-space: nowrap;
   transition: all 300ms ease;
 }
@@ -439,11 +439,11 @@ body main section.about .container .geral-data .data-self .education h3 {
   text-align: center;
 }
 body main section.about .container .geral-data .data-self .education .contain {
-  background: var(--background-medium);
+  background: var(--background-max);
   border-radius: 10px;
   padding: 30px 25px;
   margin-bottom: 70px;
-  background: var(--background-medium);
+  background: var(--background-max);
   background-size: 100%;
   box-shadow: 0 0 10px var(--background-min);
   position: relative;
@@ -514,7 +514,7 @@ body main section.about .container .geral-data .data-self .xp .slides {
   padding: 20px 50px;
   overflow: hidden;
   border-radius: 10px;
-  background: var(--background-medium);
+  background: var(--background-max);
   background-size: 100%;
   box-shadow: 0 0 10px var(--background-min);
 }
@@ -623,55 +623,55 @@ body main section.about .container .geral-data .data-self .xp .slides .dots .dot
 body main section.about .container .geral-data .data-self .xp .slides .dots .dot.active {
   background: var(--skin-color);
 }
-body main section.about .container .geral-data .skills {
+body main section.about .container .geral-data .hardSkills {
   width: 35%;
 }
-body main section.about .container .geral-data .skills h3 {
+body main section.about .container .geral-data .hardSkills h3 {
   text-align: center;
   font-size: 30px;
   color: var(--text-main);
 }
-body main section.about .container .geral-data .skills > span {
+body main section.about .container .geral-data .hardSkills > span {
   display: block;
   margin-bottom: 20px;
   color: var(--text-sub);
 }
-body main section.about .container .geral-data .skills > div#skills > h4 {
+body main section.about .container .geral-data .hardSkills #hardSkills-container > h4 {
   margin-bottom: 10px;
   font-size: 20px;
   color: var(--skin-color);
   text-decoration: underline;
 }
-body main section.about .container .geral-data .skills > div#skills > ul {
+body main section.about .container .geral-data .hardSkills #hardSkills-container > ul {
   margin-bottom: 15px;
   border-bottom: 1px solid var(--background-min);
 }
-body main section.about .container .geral-data .skills > div#skills > ul li {
+body main section.about .container .geral-data .hardSkills #hardSkills-container > ul li {
   position: relative;
   margin-bottom: 25px;
 }
-body main section.about .container .geral-data .skills > div#skills > ul li .progress .name-porcent {
+body main section.about .container .geral-data .hardSkills #hardSkills-container > ul li .progress .name-porcent {
   display: flex;
   justify-content: space-between;
   margin-bottom: 5px;
   position: relative;
 }
-body main section.about .container .geral-data .skills > div#skills > ul li .progress .name-porcent span:nth-child(1) {
+body main section.about .container .geral-data .hardSkills #hardSkills-container > ul li .progress .name-porcent span:nth-child(1) {
   font-weight: 900;
   color: var(--text-main);
   cursor: pointer;
 }
-body main section.about .container .geral-data .skills > div#skills > ul li .progress .name-porcent span:nth-child(1):hover ~ .details {
+body main section.about .container .geral-data .hardSkills #hardSkills-container > ul li .progress .name-porcent span:nth-child(1):hover ~ .details {
   visibility: visible;
 }
-body main section.about .container .geral-data .skills > div#skills > ul li .progress .name-porcent span:nth-child(3) {
+body main section.about .container .geral-data .hardSkills #hardSkills-container > ul li .progress .name-porcent span:nth-child(3) {
   color: var(--text-sub);
 }
-body main section.about .container .geral-data .skills > div#skills > ul li .progress .name-porcent .details {
+body main section.about .container .geral-data .hardSkills #hardSkills-container > ul li .progress .name-porcent .details {
   position: absolute;
   visibility: hidden;
   top: 220%;
-  background: var(--background-medium);
+  background: var(--background-max);
   z-index: 10;
   color: var(--text-sub);
   border: 2px solid var(--text-main);
@@ -679,7 +679,7 @@ body main section.about .container .geral-data .skills > div#skills > ul li .pro
   border-radius: 10px;
   text-align: justify;
 }
-body main section.about .container .geral-data .skills > div#skills > ul li .progress .name-porcent .details::before {
+body main section.about .container .geral-data .hardSkills #hardSkills-container > ul li .progress .name-porcent .details::before {
   position: absolute;
   content: "";
   width: 0px;
@@ -690,38 +690,38 @@ body main section.about .container .geral-data .skills > div#skills > ul li .pro
   top: 0;
   transform: translateY(-100%);
 }
-body main section.about .container .geral-data .skills > div#skills > ul li .progress .progress-bar {
+body main section.about .container .geral-data .hardSkills #hardSkills-container > ul li .progress .progress-bar {
   width: 100%;
   height: 10px;
   background: var(--background-min);
   overflow: hidden;
   border-radius: 50px;
 }
-body main section.about .container .geral-data .skills > div#skills > ul li .progress .progress-bar .progress-value {
+body main section.about .container .geral-data .hardSkills #hardSkills-container > ul li .progress .progress-bar .progress-value {
   background: var(--skin-color);
   height: 100%;
 }
-body main section.services .servicesCards {
+body main section.services #services-container {
   display: flex;
   flex-wrap: wrap;
 }
-body main section.services .servicesCards .card {
+body main section.services #services-container .card {
   min-width: 300px;
   width: 30%;
   max-width: 450px;
-  background: var(--background-medium);
+  background: var(--background-max);
   padding: 20px;
   margin: 10px;
   border: 2px solid var(--background-min);
   border-radius: 5px;
 }
-body main section.services .servicesCards .card .i {
+body main section.services #services-container .card .i {
   height: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-body main section.services .servicesCards .card .i i {
+body main section.services #services-container .card .i i {
   height: 100px;
   width: 100px;
   display: flex;
@@ -732,7 +732,7 @@ body main section.services .servicesCards .card .i i {
   font-size: 3rem;
   transition: 400ms ease-in-out;
 }
-body main section.services .servicesCards .card h2 {
+body main section.services #services-container .card h2 {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -742,7 +742,7 @@ body main section.services .servicesCards .card h2 {
   margin-bottom: 20px;
   height: 70px;
 }
-body main section.services .servicesCards .card p {
+body main section.services #services-container .card p {
   color: var(--text-sub);
   text-align: justify;
   display: -webkit-box;
@@ -751,14 +751,100 @@ body main section.services .servicesCards .card p {
   overflow: hidden;
   height: 95px;
 }
-body main section.services .servicesCards .card:hover {
+body main section.services #services-container .card:hover {
   cursor: pointer;
 }
-body main section.services .servicesCards .card:hover i {
-  color: var(--background-medium);
+body main section.services #services-container .card:hover i {
+  color: var(--background-max);
   background: var(--skin-color);
   padding: 20px;
   border-radius: 50%;
+}
+body main section.projects #projects-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+body main section.projects #projects-container .card {
+  margin: 20px;
+  overflow: hidden;
+  position: relative;
+  min-width: 450px;
+  width: 45%;
+  max-width: 600px;
+  border-radius: 10px;
+  height: 270px;
+  background: var(--background-max);
+}
+body main section.projects #projects-container .card:hover .details {
+  border-radius: 0px;
+  top: 0%;
+}
+body main section.projects #projects-container .card .img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+body main section.projects #projects-container .card .img img {
+  width: 100%;
+  height: 100%;
+}
+body main section.projects #projects-container .card .details {
+  padding: 20px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 100%;
+  z-index: 2;
+  background: var(--background-max);
+}
+body main section.projects #projects-container .card .details .skill-tags {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+body main section.projects #projects-container .card .details .skill-tags .tag {
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin: 5px;
+  font-size: 0.6rem;
+  display: inline-block;
+  background: var(--text-main);
+  color: var(--background-min);
+  font-weight: bold;
+}
+body main section.projects #projects-container .card .details h3 {
+  color: var(--text-main);
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+body main section.projects #projects-container .card .details p {
+  color: var(--text-sub);
+  text-align: justify;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  height: 70px;
+  margin-bottom: 20px;
+}
+body main section.projects #projects-container .card .details .links {
+  display: flex;
+  justify-content: space-between;
+}
+body main section.projects #projects-container .card .details .links a {
+  width: 45%;
+  display: block;
+  padding: 10px 0 10px;
+  background: var(--text-sub);
+  font-weight: bold;
+  border-radius: 5px;
+  color: var(--background-max);
+  text-align: center;
+  margin: 0 auto 20px;
+}
+body main section.projects #projects-container .card .details .links a:hover {
+  background: var(--text-main);
 }
 body main section.contact .title {
   width: 100%;
@@ -817,11 +903,12 @@ body main section.contact ul li a {
   border-radius: 5px;
 }
 body main section.contact ul li:hover {
-  background: #fff;
+  background: var(--background-max);
   outline: 2px solid var(--background-min);
+  transform: scale(1.05);
 }
 body main section.contact ul li:hover h4 {
-  color: #302e4d;
+  color: var(--text-main);
 }
 body main section.contact ul li:hover a {
   background: var(--skin-color);
@@ -857,6 +944,8 @@ body main section.contact form .camp textarea {
   border-radius: 100px;
   margin-bottom: 30px;
   border: 2px solid transparent;
+  background: var(--background-max);
+  color: var(--text-main);
 }
 body main section.contact form .camp input:focus,
 body main section.contact form .camp textarea:focus {
@@ -881,9 +970,9 @@ body main section.contact form .button button {
   width: 50%;
   height: 50px;
   border-radius: 100px;
-  border: 2px solid var(--skin-color);
+  border: 2px solid #757575;
   background: var(--background-min);
-  color: var(--skin-color);
+  color: var(--text-main);
   font-size: 1.2em;
 }
 body main section.contact form .button button:hover {
@@ -892,8 +981,8 @@ body main section.contact form .button button:hover {
   color: white;
 }
 body.dark {
-  --background-max: #151515;
-  --background-medium: #222222;
+  --background-middle: #151515;
+  --background-max: #222222;
   --background-min: #393939;
   --text-main: #ffffff;
   --text-sub: #e9e9e9;

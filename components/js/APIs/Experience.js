@@ -1,6 +1,6 @@
 import Slide from "../classes/Slide.js";
 
-let divExperience = document.querySelector( "#experience" );
+let Experience = document.querySelector( "#experience-container" );
 
 async function fetchData () {
 	try {
@@ -8,7 +8,7 @@ async function fetchData () {
 		const data = await response.json();
 
 		data.experience.forEach( ( card ) => {
-			divExperience.innerHTML +=
+			Experience.innerHTML +=
 				`
         <li class="slides-pag">
           <h4>${ card.area }</h4>
@@ -18,7 +18,7 @@ async function fetchData () {
 		} );
 
 		new Slide(
-			"main section.about .container .geral-data .data-self .xp .slides #experience li",
+			"main section.about .container .geral-data .data-self .xp .slides #experience-container li",
 			"main section.about .container .geral-data .data-self .xp .slides .prev",
 			"main section.about .container .geral-data .data-self .xp .slides .next",
 			"main section.about .container .geral-data .data-self .xp .slides .dots .dot"

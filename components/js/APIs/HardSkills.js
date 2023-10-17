@@ -1,4 +1,4 @@
-let divSkills = document.querySelector( "#skills" );
+let HardSkills = document.querySelector( "#hardSkills-container" );
 
 fetch( "data.json" ).then( ( response ) => {
 
@@ -13,7 +13,7 @@ fetch( "data.json" ).then( ( response ) => {
 
 			function newSection ( index = 0 ) {
 				if ( itemCurrent == index ) {
-					divSkills.innerHTML +=
+					HardSkills.innerHTML +=
 						`
 						<h4>${ sections[ nameSection ] }</h4>
 						<ul class="${ sections[ nameSection ] }"></ul>
@@ -25,7 +25,7 @@ fetch( "data.json" ).then( ( response ) => {
 				newSection( newUlStart[ index ] );
 			}
 
-			let divUl = document.querySelector( `#skills > ul.${ sections[ nameSection - 1 ] }` );
+			let divUl = document.querySelector( `#hardSkills-container > ul.${ sections[ nameSection - 1 ] }` );
 			divUl.innerHTML +=
 				`
 				<li>

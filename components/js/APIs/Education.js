@@ -1,9 +1,9 @@
-let divEducation = document.querySelector( "#education" );
+let Education = document.querySelector( "#education-container" );
 
 fetch( "data.json" ).then( ( response ) => {
 	response.json().then( ( data ) => {
 		data.education.map( ( card ) => {
-			divEducation.innerHTML +=
+			Education.innerHTML +=
 				`
 				<li>
 					<div class="point"></div>

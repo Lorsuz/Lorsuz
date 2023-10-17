@@ -33,7 +33,7 @@
 			</nav>
 			<div class="theme">
 				<label for="color"><i class="fa-solid fa-palette"></i></label>
-				<input type="color" id="color" value="#ec1839">
+				<input type="color" id="color">
 				<button class="mode"><i class="fa-solid fa-sun"></i></button>
 			</div>
 		</aside>
@@ -43,8 +43,9 @@
 					<div class="left">
 						<h1>Hi, my name is <span>Ariel Souza</span></h1>
 						<h2>I am <span class="typing">DevMan</span></h2>
-						<p>I have talents in coding and a lot of desire to learn. I have dedicated myself to improving my programming skills through self-study and practice projects.</p>
-						<a href="">Hire me</a>
+						<p>I have talents in coding and a lot of desire to learn. I have dedicated myself to improving my
+							programming skills through self-study and practice projects.</p>
+						<a href="">Curriculum</a>
 					</div>
 					<div class="right">
 						<div class="img">
@@ -59,7 +60,10 @@
 				<div class="container">
 					<h1>Sobre mim</h1>
 					<h2>Hello @everyone!</h2>
-					<p>I have completed several projects that showcase my skills, including creating website applications and working on algorithm challenges. My area of expertise is in web development, where I have achieved proficiency in HTML, CSS, JavaScript and various front-end and back-end technologies such as NodeJs and PHP. I'm excited to continue growing as a developer and facing new challenges in the world of programming.</p>
+					<p>I have completed several projects that showcase my skills, including creating website applications and
+						working on algorithm challenges. My area of expertise is in web development, where I have achieved
+						proficiency in HTML, CSS, JavaScript and various front-end and back-end technologies such as NodeJs and PHP.
+						I'm excited to continue growing as a developer and facing new challenges in the world of programming.</p>
 					<div class="geral-data">
 						<div class="data-self">
 							<ul class="data">
@@ -73,14 +77,14 @@
 								<li><span>Certificate: </span>Computer Technician</li>
 							</ul>
 							<div class="btn">
-								<a href="#">Currículo</a>
-								<a href="#">Contrate-me</a>
+								<a href="#">Curriculum</a>
+								<a href="#">Personal Profile</a>
 							</div>
 							<div class="education">
 								<h3>Educação</h3>
 								<div class="contain">
 									<div class="line"></div>
-									<ul id="education"></ul>
+									<ul id="education-container"></ul>
 								</div>
 							</div>
 							<div class="xp">
@@ -88,9 +92,9 @@
 								<div class="slides">
 									<div class="prev"><i class="fa-solid fa-chevron-left"></i></div>
 									<div class="next"><i class="fa-solid fa-chevron-right"></i></div>
-									<ul id="experience"></ul>
+									<ul id="experience-container"></ul>
 									<ul class="dots">
-										<li class="dot active"></li>	
+										<li class="dot active"></li>
 										<li class="dot"></li>
 										<li class="dot"></li>
 										<li class="dot"></li>
@@ -98,10 +102,10 @@
 								</div>
 							</div>
 						</div>
-						<div class="skills">
+						<div class="hardSkills">
 							<h3>Skills</h3>
 							<span>Passe por cima dos itens para uma visão mais detalhada!</span>
-							<div id="skills"></div>
+							<div id="hardSkills-container"></div>
 						</div>
 					</div>
 
@@ -110,69 +114,7 @@
 			<section class="services">
 				<div class="container">
 					<h1>Services</h1>
-					<div class="servicesCards">
-						<div class="card">
-							<div class="i"><i class="fas fa-desktop"></i></div>
-							<h2>Front End Web Development</h2>
-							<p>Create beautiful and interactive user interfaces for websites and web applications.</p>
-						</div>
-						<div class="card">
-							<div class="i"><i class="fas fa-server"></i></div>
-							<h2>Back End Web Development</h2>
-							<p>Build the server-side logic and databases that power web applications.</p>
-						</div>
-						<div class="card">
-							<div class="i"><i class="fas fa-laptop-code"></i></div>
-							<h2>Full Stack Web Development</h2>
-							<p>Combine front-end and back-end skills to develop complete web solutions.</p>
-						</div>
-						<div class="card">
-							<div class="i"><i class="fas fa-paint-brush"></i></div>
-							<h2>UI/UX Web Design</h2>
-							<p>Create user-friendly and visually appealing web interfaces for a great user experience.</p>
-						</div>
-						<div class="card">
-							<div class="i"><i class="fas fa-code"></i></div>
-							<h2>Code Refactoring</h2>
-							<p>Optimize and improve existing codebases for better performance and maintainability.</p>
-						</div>
-						<div class="card">
-							<div class="i"><i class="fas fa-code-branch"></i></div>
-							<h2>Open Source Contributions</h2>
-							<p>Contribute to open-source projects and collaborate with the developer community.</p>
-						</div>
-						<div class="card">
-							<div class="i"><i class="fas fa-database"></i></div>
-							<h2>Database Design and Management</h2>
-							<p>Design and manage databases for efficient data storage and retrieval.</p>
-						</div>
-						<div class="card">
-							<div class="i"><i class="fas fa-cogs"></i></div>
-							<h2>API Development</h2>
-							<p>Create APIs to enable communication and data exchange between different software systems.</p>
-						</div>
-						<div class="card">
-							<div class="i"><i class="fas fa-bug"></i></div>
-							<h2>Quality Assurance and Testing</h2>
-							<p>Ensure the quality and reliability of software through testing and quality assurance processes.</p>
-						</div>
-						<div class="card">
-							<div class="i"><i class="fas fa-file-alt"></i></div>
-							<h2>Technical Writing</h2>
-							<p>Produce technical documentation, manuals, and articles to support software projects.</p>
-						</div>
-						<div class="card">
-							<div class="i"><i class="fas fa-users"></i></div>
-							<h2>Consulting and Training</h2>
-							<p>Offer technical consulting and training services to individuals and businesses.</p>
-						</div>
-					<div class="card">
-						<div class="i"><i class="fas fa-school"></i></div>
-						<h2>School Activity Coding</h2>
-						<p>Develop code and software solutions for school projects and activities.</p>
-					</div>
-				</div>
-					
+					<ul id="services-container"></ul>
 				</div>
 			</section>
 			<section class="highlights">
@@ -184,22 +126,8 @@
 			<section class="projects">
 				<div class="container">
 					<h1>Projetos</h1>
-					<div class="containerCards">
 
-						<h2>Projetos de aprendizado</h2>
-						
-						<h2>Projetos Front End</h2>
-						<h2>Projetos Full Stack</h2>
-						<div class="card-project"><img src="" alt=""></div>
-						<div class="card-project"><img src="" alt=""></div>
-						<div class="card-project"><img src="" alt=""></div>
-						<div class="card-project"><img src="" alt=""></div>
-						<div class="card-project"><img src="" alt=""></div>
-						<div class="card-project"><img src="" alt=""></div>
-						<div class="card-project"><img src="" alt=""></div>
-						<div class="card-project"><img src="" alt=""></div>
-						<div class="card-project"><img src="" alt=""></div>
-					</div>
+					<ul id="projects-container"></ul>
 				</div>
 			</section>
 			<section class="contact">
@@ -228,10 +156,11 @@
 						<li>
 							<div class="icon"><i class="fa-solid fa-laptop"></i></div>
 							<h4>Workana</h4>
-							<a target="_blank" href="https://www.workana.com/freelancer/fe72ab6f9417893adb2de0eaaa2d214c">workana.com/Lorsuz</a>
+							<a target="_blank"
+								href="https://www.workana.com/freelancer/fe72ab6f9417893adb2de0eaaa2d214c">workana.com/Lorsuz</a>
 						</li>
 					</ul>
-					
+
 					<div class="title">
 						<h2>Send me an E-mail</h2>
 						<span>I very responsive to messages</span>

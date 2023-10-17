@@ -4,12 +4,13 @@
 @import "./animations/@keyframes.css";
 
 :root {
-	--background-max: #f2f2fc;
-	--background-medium: #fdf9ff;
+	--background-max: #fdf9ff;
+	--background-middle: #f2f2fc;
 	--background-min: #e8dfec;
 	--text-main: #302e4d;
 	--text-sub: #504e70;
-	--skin-color: #ec1839;
+	--skin-color: #2e8832;
+	// --skin-color: #708090;
 }
 
 * {
@@ -91,7 +92,7 @@ body {
 	aside {
 		padding: 30px;
 		width: 270px;
-		background: var(--background-medium);
+		background: var(--background-max);
 		position: fixed;
 		left: 0;
 		top: 0;
@@ -159,7 +160,7 @@ body {
 			left: 300px;
 			top: 20px;
 			border-radius: 5px;
-			background: var(--background-medium);
+			background: var(--background-max);
 			display: none;
 
 			span {
@@ -260,7 +261,7 @@ body {
 
 	main {
 		section {
-			background: var(--background-max);
+			background: var(--background-middle);
 			height: 100vh;
 			position: absolute;
 			left: 270px;
@@ -278,7 +279,7 @@ body {
 			}
 
 			&::-webkit-scrollbar-track {
-				background: var(--background-max);
+				background: var(--background-middle);
 			}
 
 			&::-webkit-scrollbar-thumb {
@@ -380,7 +381,7 @@ body {
 
 							&:hover {
 								background: var(--skin-color);
-								color: var(--background-max);
+								color: var(--background-middle);
 								border: 3px solid var(--background-min);
 							}
 						}
@@ -499,7 +500,7 @@ body {
 									background: var(--skin-color);
 									font-size: 18px;
 									font-weight: 500;
-									color: var(--background-max);
+									color: var(--background-middle);
 									white-space: nowrap;
 									transition: all 300ms ease;
 
@@ -518,11 +519,11 @@ body {
 								}
 
 								.contain {
-									background: var(--background-medium);
+									background: var(--background-max);
 									border-radius: 10px;
 									padding: 30px 25px;
 									margin-bottom: 70px;
-									background: var(--background-medium);
+									background: var(--background-max);
 									background-size: 100%;
 									box-shadow: 0 0 10px var(--background-min);
 									position: relative;
@@ -607,7 +608,7 @@ body {
 									padding: 20px 50px;
 									overflow: hidden;
 									border-radius: 10px;
-									background: var(--background-medium);
+									background: var(--background-max);
 									background-size: 100%;
 									box-shadow: 0 0 10px var(--background-min);
 
@@ -728,17 +729,17 @@ body {
 											border-radius: 50%;
 											cursor: pointer;
 											transition: 500ms;
-										}
 
-										.dot.active {
-											background: var(--skin-color);
+											&.active {
+												background: var(--skin-color);
+											}
 										}
 									}
 								}
 							}
 						}
 
-						.skills {
+						.hardSkills {
 							width: 35%;
 
 							h3 {
@@ -753,7 +754,7 @@ body {
 								color: var(--text-sub);
 							}
 
-							>div#skills {
+							#hardSkills-container {
 								>h4 {
 									margin-bottom: 10px;
 									font-size: 20px;
@@ -800,7 +801,7 @@ body {
 													position: absolute;
 													visibility: hidden;
 													top: 220%;
-													background: var(--background-medium);
+													background: var(--background-max);
 													z-index: 10;
 													color: var(--text-sub);
 													border: 2px solid var(--text-main);
@@ -848,7 +849,7 @@ body {
 					// outline: 1px dotted;
 				}
 
-				.servicesCards {
+				#services-container {
 					display: flex;
 					flex-wrap: wrap;
 					// justify-content: space-between;
@@ -857,7 +858,7 @@ body {
 						min-width: 300px;
 						width: 30%;
 						max-width: 450px;
-						background: var(--background-medium);
+						background: var(--background-max);
 						padding: 20px;
 						margin: 10px;
 						border: 2px solid var(--background-min);
@@ -907,11 +908,117 @@ body {
 							cursor: pointer;
 
 							i {
-								color: var(--background-medium);
+								color: var(--background-max);
 								background: var(--skin-color);
 								padding: 20px;
 								border-radius: 50%;
 
+							}
+						}
+					}
+				}
+			}
+
+			&.projects {
+				#projects-container {
+					display: flex;
+					flex-wrap: wrap;
+
+					.card {
+						margin: 20px;
+						overflow: hidden;
+						position: relative;
+						min-width: 450px;
+						width: 45%;
+						max-width: 600px;
+						border-radius: 10px;
+						height: 270px;
+						background: var(--background-max);
+
+						&:hover {
+							
+							.details {
+								border-radius: 0px;
+								top: 0%;
+							}
+						}
+
+						.img {
+							width: 100%;
+							height: 100%;
+							overflow: hidden;
+
+							img {
+								width: 100%;
+								height: 100%;
+							}
+						}
+
+
+						.details {
+							padding: 20px;
+							position: absolute;
+							width: 100%;
+							height: 100%;
+							top: 100%;
+							z-index: 2;
+							background: var(--background-max);
+
+							.skill-tags {
+								display: flex;
+								align-items: center;
+								margin-bottom: 10px;
+
+								.tag {
+									padding: 5px 10px;
+									border-radius: 5px;
+									margin: 5px;
+									font-size: 0.6rem;
+									display: inline-block;
+									background: var(--text-main);
+									color: var(--background-min);
+									font-weight: bold;
+
+								}
+							}
+
+							h3 {
+								color: var(--text-main);
+								text-align: center;
+								margin-bottom: 10px;
+								font-size: 1.5rem;
+							}
+
+							p {
+								color: var(--text-sub);
+								text-align: justify;
+								display: -webkit-box;
+								-webkit-line-clamp: 3;
+								-webkit-box-orient: vertical;
+								overflow: hidden;
+								height: 70px;
+								margin-bottom: 20px;
+							}
+
+							.links {
+								display: flex;
+								justify-content: space-between;
+
+								a {
+									width: 45%;
+									display: block;
+									padding: 10px 0 10px;
+									background: var(--text-sub);
+									font-weight: bold;
+									border-radius: 5px;
+									color: var(--background-max);
+									text-align: center;
+									margin: 0 auto 20px;
+
+									&:hover {
+										background: var(--text-main);
+									}
+								}
 							}
 						}
 					}
@@ -987,12 +1094,16 @@ body {
 						}
 
 						&:hover {
-							background: #fff;
+							background: var(--background-max);
 							outline: 2px solid var(--background-min);
-							h4{
-								color: #302e4d; 
+							transform: scale(1.05);
+
+
+							h4 {
+								color: var(--text-main);
 							}
-							a{
+
+							a {
 								background: var(--skin-color);
 								color: white;
 
@@ -1008,48 +1119,55 @@ body {
 					.name-email {
 						display: flex;
 						justify-content: space-between;
-.camp{
-width: 48%;
-}
+
+						.camp {
+							width: 48%;
+						}
 					}
 
-					.camp{
+					.camp {
 						display: flex;
 						flex-direction: column;
-						label{
+
+						label {
 							color: var(--text-sub);
 							font-size: 1.2rem;
 							margin-bottom: 10px;
 							margin-left: 20px;
 							font-weight: bold;
 						}
+
 						input,
-					textarea {
-						width: 100%;
-						height: 50px;
-						padding: 0 20px;
-						font-size: 1.2rem;
-						border-radius: 100px;
-						margin-bottom: 30px;
-						border: 2px solid transparent;
-						&:focus{
-							border: 2px solid var(--skin-color);
+						textarea {
+							width: 100%;
+							height: 50px;
+							padding: 0 20px;
+							font-size: 1.2rem;
+							border-radius: 100px;
+							margin-bottom: 30px;
+							border: 2px solid transparent;
+							background: var(--background-max);
+							color: var(--text-main);
 
+							&:focus {
+								border: 2px solid var(--skin-color);
+
+							}
 						}
-					}
-					textarea {
-						min-height: 65px;
-						height: 200px;
-						max-height: 300px;
-						border-radius: 15px;
-						padding: 15px 20px;
-						resize: vertical;
-						margin-bottom: 20px;
-					}
-				
-				}
 
-					
+						textarea {
+							min-height: 65px;
+							height: 200px;
+							max-height: 300px;
+							border-radius: 15px;
+							padding: 15px 20px;
+							resize: vertical;
+							margin-bottom: 20px;
+						}
+
+					}
+
+
 
 					.button {
 						display: flex;
@@ -1061,9 +1179,9 @@ width: 48%;
 							width: 50%;
 							height: 50px;
 							border-radius: 100px;
-							border: 2px solid var(--skin-color);
+							border: 2px solid #757575;
 							background: var(--background-min);
-							color: var(--skin-color);
+							color: var(--text-main);
 							font-size: 1.2em;
 
 							&:hover {
@@ -1079,8 +1197,8 @@ width: 48%;
 	}
 
 	&.dark {
-		--background-max: #151515;
-		--background-medium: #222222;
+		--background-middle: #151515;
+		--background-max: #222222;
 		--background-min: #393939;
 		--text-main: #ffffff;
 		--text-sub: #e9e9e9;

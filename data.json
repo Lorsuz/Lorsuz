@@ -34,19 +34,27 @@
 	"experience": [
 		{
 			"area": "Pratic Projects",
-			"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias velit voluptates aut, consectetur ullam est expedita placeat sapiente quidem nihil, ratione tempora incidunt voluptatem, nemo nulla doloremque possimus exercitationem nesciunt."
+			"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias velit voluptates aut, consectetur ullam est expedita placeat sapiente quidem nihild.",
+			"repository": "",
+			"pages": ""
 		},
 		{
 			"area": "aloppooy",
-			"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias velit voluptates aut, consectetur ullam est expedita placeat sapiente quidem nihil, ratione tempora incidunt voluptatem, nemo nulla doloremque possimus exercitationem nesciunt."
+			"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias velit voluptates aut, consectetur ullam est expedita placeat sapiente quidem nihild.",
+			"repository": "",
+			"pages": ""
 		},
 		{
 			"area": "algergergre",
-			"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias velit voluptates aut, consectetur ullam est expedita placeat sapiente quidem nihil, ratione tempora incidunt voluptatem, nemo nulla doloremque possimus exercitationem nesciunt."
+			"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias velit voluptates aut, consectetur ullam est expedita placeat sapiente quidem nihild.",
+			"repository": "",
+			"pages": ""
 		},
 		{
 			"area": "ergrejyujyuuma",
-			"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias velit voluptates aut, consectetur ullam est expedita placeat sapiente quidem nihil, ratione tempora incidunt voluptatem, nemo nulla doloremque possimus exercitationem nesciunt."
+			"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias velit voluptates aut, consectetur ullam est expedita placeat sapiente quidem nihild.",
+			"repository": "",
+			"pages": ""
 		}
 	],
 	"skills": [
@@ -154,6 +162,141 @@
 			"technology": "WORDPRESS",
 			"percent": 80,
 			"details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias velit voluptates aut, consectetur ullam est expedita placeat"
+		}
+	],
+	"services": [
+		{
+			"service": "Front End Web Development",
+			"icon": "desktop",
+			"description": "Create beautiful and interactive user interfaces for websites and web applications."
+		},
+		{
+			"service": "Back End Web Development",
+			"icon": "server",
+			"description": "Build the server-side logic and databases that power web applications."
+		},
+		{
+			"service": "Full Stack Web Development",
+			"icon": "laptop-code",
+			"description": "Combine front-end and back-end skills to develop complete web solutions."
+		},
+		{
+			"service": "UI/UX Web Design",
+			"icon": "paint-brush",
+			"description": "Create user-friendly and visually appealing web interfaces for a great user experience."
+		},
+		{
+			"service": "Code Refactoring",
+			"icon": "code",
+			"description": "Optimize and improve existing codebases for better performance and maintainability."
+		},
+		{
+			"service": "Open Source Contributions",
+			"icon": "code-branch",
+			"description": "Contribute to open-source projects and collaborate with the developer community."
+		},
+		{
+			"service": "Database Design and Management",
+			"icon": "database",
+			"description": "Design and manage databases for efficient data storage and retrieval."
+		},
+		{
+			"service": "API Development",
+			"icon": "cogs",
+			"description": "Create APIs to enable communication and data exchange between different software systems."
+		},
+		{
+			"service": "Quality Assurance and Testing",
+			"icon": "bug",
+			"description": "Ensure the quality and reliability of software through testing and quality assurance processes."
+		},
+		{
+			"service": "Technical Writing",
+			"icon": "file-alt",
+			"description": "Produce technical documentation, manuals, and articles to support software projects."
+		},
+		{
+			"service": "Consulting and Training",
+			"icon": "users",
+			"description": "Offer technical consulting and training services to individuals and businesses."
+		},
+		{
+			"service": "School Activity Coding",
+			"icon": "school",
+			"description": "Develop code and software solutions for school projects and activities."
+		}
+	],
+	"projects": [
+		{
+			"project": "Flirt-me",
+			"image": "flirt-me.png",
+			"skills": [
+				"HTML",
+				"CSS",
+				"Java Script"
+			],
+			"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias velit voluptates aut, consectetur ullam est expedita placeat sapiente quidem nihild.",
+			"repository": "flirt-me",
+			"pages": "https://lorsuz.github.io/flirt-me/"
+		},
+		{
+			"project": "Financial Control",
+			"image": "financial-control.png",
+			"skills": [
+				"HTML",
+				"Bootstrap",
+				"Java Script"
+			],
+			"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias velit voluptates aut, consectetur ullam est expedita placeat sapiente quidem nihild.",
+			"repository": "financial-control",
+			"pages": "https://lorsuz.github.io/financial-control/"
+		},
+		{
+			"project": "A negrinha",
+			"image": "a-negrinha.png",
+			"skills": [
+				"HTML",
+				"CSS",
+				"Java Script",
+				"JQuery"
+			],
+			"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias velit voluptates aut, consectetur ullam est expedita placeat sapiente quidem nihild.",
+			"repository": "a-negrinha",
+			"pages": "https://lorsuz.github.io/a-negrinha/"
+		},
+		{
+			"project": "Divertidamente",
+			"image": "divertidamente.png",
+			"skills": [
+				"HTML",
+				"CSS",
+				"Java Script"
+			],
+			"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias velit voluptates aut, consectetur ullam est expedita placeat sapiente quidem nihild.",
+			"repository": "divertidamente",
+			"pages": "https://lorsuz.github.io/divertidamente/"
+		},
+		{
+			"project": "Wooshol",
+			"image": "wooshol.png",
+			"skills": [
+				"HTML",
+				"CSS"
+			],
+			"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias velit voluptates aut, consectetur ullam est expedita placeat sapiente quidem nihild.",
+			"repository": "wooshol",
+			"pages": "https://lorsuz.github.io/wooshol/"
+		},
+		{
+			"project": "Wooshol",
+			"image": "wooshol.png",
+			"skills": [
+				"HTML",
+				"CSS"
+			],
+			"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias velit voluptates aut, consectetur ullam est expedita placeat sapiente quidem nihild.",
+			"repository": "wooshol",
+			"pages": ""
 		}
 	]
 }
