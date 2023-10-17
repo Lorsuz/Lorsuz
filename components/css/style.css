@@ -1027,7 +1027,7 @@ body.dark main section.about .container .geral-data .data-self .xp .slides::befo
   opacity: 0.2;
 }
 body.dark main section.projects #projects-container .card .details::before {
-  opacity: 0.4;
+  opacity: 0.3;
 }
 
 /*# sourceMappingURL=style.css.map */
