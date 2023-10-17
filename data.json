@@ -4,55 +4,55 @@
 			"startYear": 2008,
 			"finalYear": 2012,
 			"nameSchool": "Colegio Inácia Rita",
-			"description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel ipsa pariatur, modi iste, esse quis ducimus tempore laborum dolorem ea nostrum inventore officiis placeat at numquam laudantium."
+			"description": "Lorem ipsum dolor sit, amet consectetur icing elit. Vel ipsa pariatur, modi iste, esse quis ducimus tempore laborum dolorem ea nostrum inventore officiis placeat at numquam laudantium."
 		},
 		{
 			"startYear": 2013,
 			"finalYear": 2015,
 			"nameSchool": "Colegio Cícero Rêgo",
-			"description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel ipsa pariatur, modi iste, esse quis ducimus tempore laborum dolorem ea nostrum inventore officiis placeat at numquam laudantium."
+			"description": "Lorem ipsum dolor sit, amet consectetur icing elit. Vel ipsa pariatur, modi iste, esse quis ducimus tempore laborum dolorem ea nostrum inventore officiis placeat at numquam laudantium."
 		},
 		{
 			"startYear": 2016,
 			"finalYear": 2019,
 			"nameSchool": "Colegio Santa Maria",
-			"description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel ipsa pariatur, modi iste, esse quis ducimus tempore laborum dolorem ea nostrum inventore officiis placeat at numquam laudantium."
+			"description": "Lorem ipsum dolor sit, amet consectetur icing elit. Vel ipsa pariatur, modi iste, esse quis ducimus tempore laborum dolorem ea nostrum inventore officiis placeat at numquam laudantium."
 		},
 		{
 			"startYear": 2020,
 			"finalYear": 2022,
 			"nameSchool": "Instituto Federal do Sertão de Pernambuco",
-			"description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel ipsa pariatur, modi iste, esse quis ducimus tempore laborum dolorem ea nostrum inventore officiis placeat at numquam laudantium."
+			"description": "Lorem ipsum dolor sit, amet consectetur icing elit. Vel ipsa pariatur, modi iste, esse quis ducimus tempore laborum dolorem ea nostrum inventore officiis placeat at numquam laudantium."
 		},
 		{
 			"startYear": 2023,
 			"finalYear": 2024,
 			"nameSchool": "Instituto Federal de ECT da Paraíba",
-			"description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel ipsa pariatur, modi iste, esse quis ducimus tempore laborum dolorem ea nostrum inventore officiis placeat at numquam laudantium."
+			"description": "Lorem ipsum dolor sit, amet consectetur icing elit. Vel ipsa pariatur, modi iste, esse quis ducimus tempore laborum dolorem ea nostrum inventore officiis placeat at numquam laudantium."
 		}
 	],
 	"experience": [
 		{
 			"area": "Pratic Projects",
-			"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias velit voluptates aut, consectetur ullam est expedita placeat sapiente quidem nihild.",
+			"description": "Lorem ipsum dolor sit amet consectetur icing elit. Molestias velit voluptates aut, consectetur ullam est expedita placeat sapiente quidem nihild.",
 			"repository": "",
 			"pages": ""
 		},
 		{
 			"area": "aloppooy",
-			"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias velit voluptates aut, consectetur ullam est expedita placeat sapiente quidem nihild.",
+			"description": "Lorem ipsum dolor sit amet consectetur icing elit. Molestias velit voluptates aut, consectetur ullam est expedita placeat sapiente quidem nihild.",
 			"repository": "",
 			"pages": ""
 		},
 		{
 			"area": "algergergre",
-			"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias velit voluptates aut, consectetur ullam est expedita placeat sapiente quidem nihild.",
+			"description": "Lorem ipsum dolor sit amet consectetur icing elit. Molestias velit voluptates aut, consectetur ullam est expedita placeat sapiente quidem nihild.",
 			"repository": "",
 			"pages": ""
 		},
 		{
 			"area": "ergrejyujyuuma",
-			"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias velit voluptates aut, consectetur ullam est expedita placeat sapiente quidem nihild.",
+			"description": "Lorem ipsum dolor sit amet consectetur icing elit. Molestias velit voluptates aut, consectetur ullam est expedita placeat sapiente quidem nihild.",
 			"repository": "",
 			"pages": ""
 		}
@@ -86,17 +86,17 @@
 		{
 			"technology": "PYTHON",
 			"percent": 70,
-			"details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias velit voluptates aut, consectetur ullam est expedita placeat"
+			"details": "Lorem ipsum dolor sit amet consectetur icing elit. Molestias velit voluptates aut, consectetur ullam est expedita placeat"
 		},
 		{
 			"technology": "JAVA",
 			"percent": 70,
-			"details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias velit voluptates aut, consectetur ullam est expedita placeat"
+			"details": "Lorem ipsum dolor sit amet consectetur icing elit. Molestias velit voluptates aut, consectetur ullam est expedita placeat"
 		},
 		{
 			"technology": "C & C++",
 			"percent": 40,
-			"details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias velit voluptates aut, consectetur ullam est expedita placeat"
+			"details": "Lorem ipsum dolor sit amet consectetur icing elit. Molestias velit voluptates aut, consectetur ullam est expedita placeat"
 		},
 		{
 			"technology": "SASS & SCSS",
@@ -106,17 +106,17 @@
 		{
 			"technology": "NODE.JS",
 			"percent": 80,
-			"details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias velit voluptates aut, consectetur ullam est expedita placeat"
+			"details": "Lorem ipsum dolor sit amet consectetur icing elit. Molestias velit voluptates aut, consectetur ullam est expedita placeat"
 		},
 		{
 			"technology": "BOOSTRAP",
 			"percent": 90,
-			"details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias velit voluptates aut, consectetur ullam est expedita placeat"
+			"details": "Lorem ipsum dolor sit amet consectetur icing elit. Molestias velit voluptates aut, consectetur ullam est expedita placeat"
 		},
 		{
 			"technology": "LARAVEL",
 			"percent": 60,
-			"details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias velit voluptates aut, consectetur ullam est expedita placeat"
+			"details": "Lorem ipsum dolor sit amet consectetur icing elit. Molestias velit voluptates aut, consectetur ullam est expedita placeat"
 		},
 		{
 			"technology": "PL",
@@ -131,7 +131,7 @@
 		{
 			"technology": "GIT & GITHUB",
 			"percent": 85,
-			"details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias velit voluptates aut, consectetur ullam est expedita placeat"
+			"details": "Lorem ipsum dolor sit amet consectetur icing elit. Molestias velit voluptates aut, consectetur ullam est expedita placeat"
 		},
 		{
 			"technology": "PDO & MYSQLI",
@@ -141,27 +141,27 @@
 		{
 			"technology": "GODOT",
 			"percent": 20,
-			"details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias velit voluptates aut, consectetur ullam est expedita placeat"
+			"details": "Lorem ipsum dolor sit amet consectetur icing elit. Molestias velit voluptates aut, consectetur ullam est expedita placeat"
 		},
 		{
 			"technology": "GAME MAKER",
 			"percent": 40,
-			"details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias velit voluptates aut, consectetur ullam est expedita placeat"
+			"details": "Lorem ipsum dolor sit amet consectetur icing elit. Molestias velit voluptates aut, consectetur ullam est expedita placeat"
 		},
 		{
 			"technology": "RPG MAKER",
 			"percent": 95,
-			"details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias velit voluptates aut, consectetur ullam est expedita placeat"
+			"details": "Lorem ipsum dolor sit amet consectetur icing elit. Molestias velit voluptates aut, consectetur ullam est expedita placeat"
 		},
 		{
 			"technology": "FIGMA",
 			"percent": 70,
-			"details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias velit voluptates aut, consectetur ullam est expedita placeat"
+			"details": "Lorem ipsum dolor sit amet consectetur icing elit. Molestias velit voluptates aut, consectetur ullam est expedita placeat"
 		},
 		{
 			"technology": "WORDPRESS",
 			"percent": 80,
-			"details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias velit voluptates aut, consectetur ullam est expedita placeat"
+			"details": "Lorem ipsum dolor sit amet consectetur icing elit. Molestias velit voluptates aut, consectetur ullam est expedita placeat"
 		}
 	],
 	"services": [
@@ -235,7 +235,7 @@
 				"CSS",
 				"Java Script"
 			],
-			"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias velit voluptates aut, consectetur ullam est expedita placeat sapiente quidem nihild.",
+			"description": "Lorem ipsum dolor sit amet consectetur icing elit. Molestias velit voluptates aut, consectetur ullam est expedita placeat sapiente quidem nihild.",
 			"repository": "flirt-me",
 			"pages": "https://lorsuz.github.io/flirt-me/"
 		},
@@ -247,7 +247,7 @@
 				"Bootstrap",
 				"Java Script"
 			],
-			"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias velit voluptates aut, consectetur ullam est expedita placeat sapiente quidem nihild.",
+			"description": "Lorem ipsum dolor sit amet consectetur icing elit. Molestias velit voluptates aut, consectetur ullam est expedita placeat sapiente quidem nihild.",
 			"repository": "financial-control",
 			"pages": "https://lorsuz.github.io/financial-control/"
 		},
@@ -260,7 +260,7 @@
 				"Java Script",
 				"JQuery"
 			],
-			"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias velit voluptates aut, consectetur ullam est expedita placeat sapiente quidem nihild.",
+			"description": "Lorem ipsum dolor sit amet consectetur icing elit. Molestias velit voluptates aut, consectetur ullam est expedita placeat sapiente quidem nihild.",
 			"repository": "a-negrinha",
 			"pages": "https://lorsuz.github.io/a-negrinha/"
 		},
@@ -272,7 +272,7 @@
 				"CSS",
 				"Java Script"
 			],
-			"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias velit voluptates aut, consectetur ullam est expedita placeat sapiente quidem nihild.",
+			"description": "Lorem ipsum dolor sit amet consectetur icing elit. Molestias velit voluptates aut, consectetur ullam est expedita placeat sapiente quidem nihild.",
 			"repository": "divertidamente",
 			"pages": "https://lorsuz.github.io/divertidamente/"
 		},
@@ -283,7 +283,7 @@
 				"HTML",
 				"CSS"
 			],
-			"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias velit voluptates aut, consectetur ullam est expedita placeat sapiente quidem nihild.",
+			"description": "Lorem ipsum dolor sit amet consectetur icing elit. Molestias velit voluptates aut, consectetur ullam est expedita placeat sapiente quidem nihild.",
 			"repository": "wooshol",
 			"pages": "https://lorsuz.github.io/wooshol/"
 		},
@@ -294,7 +294,7 @@
 				"HTML",
 				"CSS"
 			],
-			"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias velit voluptates aut, consectetur ullam est expedita placeat sapiente quidem nihild.",
+			"description": "Lorem ipsum dolor sit amet consectetur icing elit. Molestias velit voluptates aut, consectetur ullam est expedita placeat sapiente quidem nihild.",
 			"repository": "wooshol",
 			"pages": ""
 		}

@@ -48,10 +48,6 @@ body {
 	font-size: 16px;
 	overflow-x: hidden;
 
-	* {
-		transition: 300ms;
-	}
-
 	.dot-in {
 		width: 6px;
 		aspect-ratio: 1;
@@ -928,18 +924,30 @@ body {
 						margin: 20px;
 						overflow: hidden;
 						position: relative;
-						min-width: 450px;
-						width: 45%;
-						max-width: 600px;
+						width: 450px;
+						// min-width: 450px;
+						// max-width: 600px;
 						border-radius: 10px;
 						height: 270px;
 						background: var(--background-max);
+						display: flex;
+						justify-content: center;
+						align-items: center;
 
 						&:hover {
-							
-							.details {
+							transform: scale(1.05);
+							box-shadow: 0 0 20px 0 var(--text-sub);
+
+							.animation {
+								border-radius: 0%;
+
+								height: 100%;
+								width: 100%;
 								border-radius: 0px;
-								top: 0%;
+							}
+
+							.details {
+								width: 450px;
 							}
 						}
 
@@ -954,15 +962,40 @@ body {
 							}
 						}
 
+						.animation {
+							width: 0%;
+							height: 0%;
+							position: absolute;
+							overflow: hidden;
+							z-index: 2;
+							border-radius: 100%;
+							display: flex;
+							justify-content: center;
+							align-items: center;
+							background: var(--background-max);
+						}
 
 						.details {
+							width: 450px;
 							padding: 20px;
 							position: absolute;
-							width: 100%;
-							height: 100%;
-							top: 100%;
-							z-index: 2;
-							background: var(--background-max);
+
+							height: 270px;
+							overflow: hidden;
+							transition: 345ms;
+
+							&::before {
+								content: "";
+								position: absolute;
+								top: 0;
+								left: 0;
+								width: 100%;
+								height: 100%;
+								background: url(../static/img/riscos-suaves.png) center fixed;
+								background-size: 100% 100%;
+								z-index: -1;
+								opacity: 0.4;
+							}
 
 							.skill-tags {
 								display: flex;
@@ -992,6 +1025,10 @@ body {
 							p {
 								color: var(--text-sub);
 								text-align: justify;
+								hyphens: auto;
+								-webkit-hyphens: auto;
+								-moz-hyphens: auto;
+								-ms-hyphens: auto;
 								display: -webkit-box;
 								-webkit-line-clamp: 3;
 								-webkit-box-orient: vertical;
