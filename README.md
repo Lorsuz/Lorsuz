@@ -15,7 +15,7 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 
-
+[![wakatime](https://wakatime.com/badge/user/8ac5d51d-5a6c-40dd-86e7-9543ece09676.svg)](https://wakatime.com/@8ac5d51d-5a6c-40dd-86e7-9543ece09676)
 <div align="center">
 <h2> Seja, bem vindo!</h2>
 </div>
