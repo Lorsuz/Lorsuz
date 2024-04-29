@@ -1,23 +1,23 @@
 ### Hi there 👋
 
-<!--
-**Lorsuz/Lorsuz** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
-Here are some ideas to get you started:
+**Lorsuz/Lorsuz** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on my GitHub profile.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+Here are some items for you started getting to know me:
 
+- 🔭 I’m currently working on Gresasc and Hosting freelancer projects
+- 🌱 I’m currently learning project management
+- 👯 I’m looking to collaborate on open-source projects
+- 🤔 I’m looking for help with a new job
+- 💬 Ask me about any thing you want
+- 📫 How to reach me: [My Portfolio](https://lorsuz.github.io)
+- 😄 Pronouns: He/Him
+- ⚡ Fun fact: I am currently studying high school
+
+<h4>Time playing visual studio code with WT:</h4>
 [![wakatime](https://wakatime.com/badge/user/8ac5d51d-5a6c-40dd-86e7-9543ece09676.svg)](https://wakatime.com/@8ac5d51d-5a6c-40dd-86e7-9543ece09676)
 <div align="center">
-<h2> Seja, bem vindo!</h2>
+<h2>Welcome!</h2>
 </div>
 </br>
 <div align="center">
