@@ -15,7 +15,6 @@ Here are some items for you started getting to know me:
 - ⚡ Fun fact: I am currently studying high school
 
 <h4>Time playing visual studio code with WT:</h4>
-[![wakatime](https://wakatime.com/badge/user/8ac5d51d-5a6c-40dd-86e7-9543ece09676.svg)](https://wakatime.com/@8ac5d51d-5a6c-40dd-86e7-9543ece09676)
 <a href="https://wakatime.com/@8ac5d51d-5a6c-40dd-86e7-9543ece09676"><img src="https://wakatime.com/badge/user/8ac5d51d-5a6c-40dd-86e7-9543ece09676.svg" alt="Total time coded with Wakatime since Dec 25 2021" /></a>
 <div align="center">
 <h2>Welcome!</h2>
