@@ -1,18 +1,6 @@
 ### Hi there 👋
 
-
 **Lorsuz/Lorsuz** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on my GitHub profile.
-
-Here are some items for you started getting to know me:
-
-- 🔭 I’m currently working on Gresasc and Hosting freelancer projects
-- 🌱 I’m currently learning project management
-- 👯 I’m looking to collaborate on open-source projects
-- 🤔 I’m looking for help with a new job
-- 💬 Ask me about any thing you want
-- 📫 How to reach me: [My Portfolio](https://lorsuz.github.io)
-- 😄 Pronouns: He/Him
-- ⚡ Fun fact: I am currently studying high school
 
 <h4>Time playing visual studio code with WT:</h4>
 <a href="https://wakatime.com/@8ac5d51d-5a6c-40dd-86e7-9543ece09676"><img src="https://wakatime.com/badge/user/8ac5d51d-5a6c-40dd-86e7-9543ece09676.svg" alt="Total time coded with Wakatime since Dec 25 2021" /></a>
@@ -21,11 +9,22 @@ Here are some items for you started getting to know me:
 </div>
 </br>
 <div align="center">
-  <div align="center">
-    <img height="180em" src="https://github-readme-stats.vercel.app/api?username=Lorsuz&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true"/>
-    <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Lorsuz&layout=compact&langs_count=7&theme=tokyonight"/>
+    <picture>
+		  <source
+		    srcset="https://github-readme-stats.vercel.app/api?username=lorsuz&show_icons=true&theme=dark"
+		    media="(prefers-color-scheme: dark)"
+		  />
+		  <source
+		    srcset="https://github-readme-stats.vercel.app/api?username=lorsuz&show_icons=true"
+		    media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
+		  />
+  		<img  height='250px'  src="https://github-readme-stats.vercel.app/api?username=lorsuz&show_icons=true" />
+</picture>
+    <img  height='250px' src="https://github-readme-stats.vercel.app/api/top-langs/?username=Lorsuz&layout=compact&langs_count=7&theme=dark"/>
 </div>
-</div>
+
+
+
 </br>
  <div align="center">
 <div style="display: inline_block"><br>
@@ -44,6 +43,17 @@ Here are some items for you started getting to know me:
 </div>
 </br>
 <p align="center">   <img alingn="center" src="https://profile-counter.glitch.me/Lorsuz/count.svg" /></p>
+
+Here are some items for you started getting to know me:
+
+- 🔭 I’m currently working on Gresasc and Hosting freelancer projects
+- 🌱 I’m currently learning project management
+- 👯 I’m looking to collaborate on open-source projects
+- 🤔 I’m looking for help with a new job
+- 💬 Ask me about any thing you want
+- 📫 How to reach me: [My Portfolio](https://lorsuz.github.io)
+- 😄 Pronouns: He/Him
+- ⚡ Fun fact: I am currently studying high school
 
 
 <!--![snake gif](https://github.com/Lorsuz/Lorsuz/blob/output/github-contribution-grid-snake.svg)-->
